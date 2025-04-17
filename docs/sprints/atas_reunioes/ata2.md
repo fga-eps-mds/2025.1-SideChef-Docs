@@ -41,7 +41,7 @@ Continuação do Lean Inception, incluindo as etapas:
 |-----------------------------------------------|------------------------------------------------------|-------|
 | Yasmin Dayrell Albuquerque                    | Não pode comparecer por motivos pessoais  | MDS    |
 | Pietro Calegari Visentin                      | Não pode comparecer pois teve imprevistos no trabalho | MDS   |
-| Raissa Silva de Oliveira                      | Sem justificativa | MDS   |
+| Raissa Silva de Oliveira                      | Não pode comparecer por estar acompanhando a mãe em uma consulta | MDS   |
 
 
 ## Histórico de versões
@@ -49,3 +49,4 @@ Continuação do Lean Inception, incluindo as etapas:
 | Versão | Alteração       | Responsável         | Data Alteração |
 |--------|-----------------|---------------------|----------------|
 | 1.0    | Criação da ata  | Diógenes Dantas Lélis Júnior | 16/04/2025 |
+| 1.1    | Adiciona justificativa | Bruno Seiji Kishibe | 16/04/2025 |
