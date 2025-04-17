@@ -22,6 +22,7 @@ nav:
   - Sprints:
     - Atas Reuniões: 
       - Reunião 1 (Lean Inception): sprints/atas_reunioes/ata1.md
+      - Reunião 2 (Lean Inception): sprints/atas_reunioes/ata2.md
     - Sprint 1: sprints/sprint_1.md
   - Políticas: 
     - Politica de commmits: politicas/politica_commits.md
