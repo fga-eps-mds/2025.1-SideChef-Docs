@@ -1,6 +1,6 @@
 ---
-name: US Template
-about: Template para historias de usuário
+name: Issue Template
+about: Template padrão para issues
 title: ''
 labels: ''
 assignees: ''
@@ -12,10 +12,7 @@ assignees: ''
 Descrição inicial
 
 ---
-### Tarefas
-<!-- Tarefas a serem realizadas para estra US-->
-- [ ]
----
+
 ### Critérios de Aceitação
 <!-- Regras que a funcionalidade deve seguir para ser considerada concluída. -->
 - [ ]
