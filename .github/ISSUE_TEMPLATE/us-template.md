@@ -15,11 +15,4 @@ Descrição inicial
 
 ### Critérios de Aceitação
 <!-- Regras que a funcionalidade deve seguir para ser considerada concluída. -->
-- [ ] 
-
-
----
-
-### 📎 Observações
-<!-- Qualquer detalhe adicional ou dependência importante. -->
--
+- [ ]
