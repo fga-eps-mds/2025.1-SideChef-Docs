@@ -1,4 +1,4 @@
-site_name: App Receitas
+site_name: SideChef
 
 repo_name: fga-eps-mds/2025.1-AppReceitas-Docs
 repo_url: https://github.com/fga-eps-mds/2025.1-AppReceitas-Docs
@@ -12,6 +12,7 @@ theme:
 nav: 
   - Início: index.md
   - Artefatos:
+    - Documentação da Arquitetura: artefatos/arquitetura.md
     - Lean Inception: artefatos/leaninception.md
   - Planejamento: 
     - Comunicação: planejamento/comunicacao.md
