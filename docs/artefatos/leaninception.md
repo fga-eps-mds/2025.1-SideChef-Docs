@@ -22,13 +22,13 @@ Este documento visa registrar o que foi desenvolvido no workshop de Lean Incepti
 ### Visão do Produto 
 A visão do produto definir a visão do produto de forma colaborativa, definindo o cerne do projeto com uma única frase clara e objetiva.
 
-![VisaoProduto](../assets/visao_produto.png)
+![VisaoProduto](../assets/lean_inception/visao_produto.png)
 **Autor:** SideChef Team 2025.1
 
 ### É - NÃO É / FAZ - NÃO FAZ
 Essa etapa visa definir o que o produto é e não é, e o que ele deve e não fazer, ajudando a equipe a vizualizar melhor o que almejam alcançar.
 
-![e_naoe_faz_nao_faz](../assets/e_nao_e_faz_nao_faz.png)
+![e_naoe_faz_nao_faz](../assets/lean_inception/e_nao_e_faz_nao_faz.png)
 **Autor:** SideChef Team 2025.1
 
 
@@ -55,7 +55,7 @@ Essa etapa visa definir o que o produto é e não é, e o que ele deve e não fa
 ### Objetivos do Produto
 A etapa de objetivos do produto propõe que a equipe em colaboração escreva os objetivos de negócio do produto, que depois são separados em cluters de similaridade.
 
-![objetivos_produto](../assets/objetivos_negocio.png)
+![objetivos_produto](../assets/lean_inception/objetivos_negocio.png)
 **Autor:** SideChef Team 2025.1
 
 ### Personas e Jornada do Usuário
@@ -63,24 +63,24 @@ Nesta etapa, a equipe desenvolve personas que viriam a ser exemplos de usuário 
 
 Após a criação das personas, é definida uma jornada de usuário para cada uma, imaginando como seria a inclusão da utilização do produto na rotida desta.
 #### Persona 1 - Unbôncio Gonçalvez
-![persona_1](../assets/persona_1.png)
-![jornada_1](../assets/jornada_1.png)
+![persona_1](../assets/lean_inception/persona_1.png)
+![jornada_1](../assets/lean_inception/jornada_1.png)
 **Autor:** SideChef Team 2025.1
 
 #### Persona 2 - Rogério trader
-![persona_2](../assets/persona_2.png)
-![jornada_2](../assets/jornada_2.png)
+![persona_2](../assets/lean_inception/persona_2.png)
+![jornada_2](../assets/lean_inception/jornada_2.png)
 **Autor:** SideChef Team 2025.1
 
 #### Persona 3 - Alana
-![persona_3](../assets/persona_3.png)
-![jornada_3](../assets/jornada_3.png)
+![persona_3](../assets/lean_inception/persona_3.png)
+![jornada_3](../assets/lean_inception/jornada_3.png)
 **Autor:** SideChef Team 2025.1
 
 ### Brainstorm de Funcionalidades
 O brainstorm de funcionalidades visa levantar as possíveis funcionalidades para o projeto utilizando a técnica de _brainstorm_, e depois separá-las em clusters de similaridade.
 
-![brainstorm](../assets/brainstorm_funcionalidades.png)
+![brainstorm](../assets/lean_inception/brainstorm_funcionalidades.png)
 **Autor:** SideChef Team 2025.1
 
 ## 3. Terceira reunião - 20/04/2025
@@ -107,13 +107,13 @@ A revisão técnica propõe avaliar cada funcionalidade pensada na etapa do brai
 
 Após isso, etapa do sequenciador organiza as funcionalidades pensadas, de forma incremental, facilitando a visualização da entrega do MVP e seus futuros incrementos.
 
-![sequenciador](../assets/sequenciador.png)
+![sequenciador](../assets/lean_inception/sequenciador.png)
 **Autor:** SideChef Team 2025.1
 
 ### Canvas MVP
 A etapa final do canvas MVP sumariza tudo o que foi pensado na aplicação do Lean Inception para montagem o que seria o MVP do produto a ser desenvolvido.
 
-![canvas_mvp](../assets/canvas_mvp.png)
+![canvas_mvp](../assets/lean_inception/canvas_mvp.png)
 **Autor:** SideChef Team 2025.1
 
 ## Referências Bibliográficas
