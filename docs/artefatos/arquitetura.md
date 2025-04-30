@@ -32,17 +32,98 @@ O microsserviço RecipeService é responável pela gerência e armazenamento das
 #### FrontEnd
 O frontend consiste na parte visual e utilitária ao qual o usuário interage, no caso será o aplicativo mobile desenvolvido em React Native.
 
-### 2. Diagrama de Classes
+### 2. Diagrama de sequência
 
-### 3. Arquitetura de banco de dados
+```mermaid
+---
+title: Side Chef diagrama de sequência
+---
+sequenceDiagram
+    actor Usuario
+    Usuario->>+Mobile: Usuario não possui conta
+    Mobile->>+UserService: POST cadastrarUsuario
+    UserService->>+PostgreSQL: salva usuario no banco
+    PostgreSQL->>-UserService: retorna mensagem de sucesso
+    UserService->>-Mobile: status code 201
+    Mobile->>-Usuario: Usuario criado
 
-### 3.1 Diagrama Entidade Relacionamento
+    Usuario->>+Mobile: Possui conta
+    Mobile->>+UserService: POST loginUsuario
+    UserService->>+PostgreSQL: Verifica credenciais no banco
+    PostgreSQL->>-UserService: Valida login
+    UserService->>-Mobile: status code 201
+    Mobile->>-Usuario: Usuario logado com sucesso
 
-#### 3.1.1 Microsserviço do Usuário (UserService)
+    Usuario->>+Mobile: Pesquisa lista de receitas
+    Mobile->>+RecipeService
+
+```
+**Autor:** Bruno Kishibe
+
+### 3. Diagrama de Classes
+
+```mermaid
+---
+title: Side Chef diagrama de classe
+---
+classDiagram
+    class Usuario{
+        +int idUsuario
+        +string nome
+        +string email
+        +cadastrarUsuario()
+        +deletarUsuario()
+        +atualizarCadastro()
+    }
+    class Receita{
+        +int receitaId
+        +string nome
+        +double totalCalorias
+        +double totalProteinas
+        +List~Ingrediente~ Ingredientes
+        +adicionaIngrediente()
+        -calcularProteinas()
+        -calcularCalorias()
+    }
+    class Ingrediente{
+        +int ingredienteId
+        +string nome
+        +enum unidadeMedida
+        +double calorias
+        +double proteinas
+    }
+    class Camera {
+        +capturarImagem(): Imagem
+    }
+    class OcrService {
+        +identificarIngrediente(imagem: Imagem): Ingrediente
+        +identificarInformacoesNutricionais(imagem: Imagem): Nutricao
+    }
+    class ReceitaPessoal{
+        -int idUsuario
+        +verificaAcesso()
+        +listaReceitas()
+    }
+    
+    Camera --> OcrService : fornece imagem
+    Receita <-- Usuario
+    Receita o-- Ingrediente
+    Ingrediente o-- OcrService
+    Receita <|-- ReceitaPessoal
+
+
+```
+**Autor:** Bruno Kishibe
+
+### 4. Arquitetura de banco de dados
+
+### 4.1 Diagrama Entidade Relacionamento
+
+#### 4.1.1 Microsserviço do Usuário (UserService)
 ![DiagramaEntidadeRelacionamento](../assets/diagramaEntidadeRelacionamento.png)<br>
 **Autor:** Diógenes Júnior
 
-#### 3.1.2 Microsserviço das Receitas (RecipeService)
+#### 4.1.2 Microsserviço das Receitas (RecipeService)
 ```json
 {
   "id": "id-da-receita",
@@ -57,13 +138,13 @@ O frontend consiste na parte visual e utilitária ao qual o usuário interage, n
 ```
 **Autor:** Diógenes Júnior
 
-### 3.2 Modelo Lógico de Dados
+### 4.2 Modelo Lógico de Dados
 
-#### 3.2.1 Microsserviço do Usuário (UserService)
+#### 4.2.1 Microsserviço do Usuário (UserService)
 ![ModeloLógicoDeDadosUsuário](../assets/logicaDeDados.png)<br>
 **Autor:** Diógenes Júnior
 
-#### 3.2.2 Microsserviço das Receitas (RecipeService)
+#### 4.2.2 Microsserviço das Receitas (RecipeService)
 ```json
 {
   "id": "<ObjectId>",               
@@ -78,7 +159,8 @@ O frontend consiste na parte visual e utilitária ao qual o usuário interage, n
 ## Referências Bibliográficas
 > [1] EQUIPE ARANDU 2024-2. Documento de Arquitetura. Disponível em: https://fga-eps-mds.github.io/2024.2-ARANDU-DOC/projeto/arquitetura/  
 > [2] EQUIPE SYSARQ 2021-1. Documento de Arquitetura. Disponível em: https://fga-eps-mds.github.io/2021.1-PC-GO1/doc_arquitetura/ 
-> [3] Documentação Oficial MongoDB. Disponível em: https://www.mongodb.com/pt-br/docs/v6.0/core/data-modeling-introduction/
+> [3] DEVMEDIA. Orientações básicas na elaboração de um diagrama de classes. Disponível em: https://www.devmedia.com.br/orientacoes-basicas-na-elaboracao-de-um-diagrama-de-classes/37224.
+> [4] Documentação Oficial MongoDB. Disponível em: https://www.mongodb.com/pt-br/docs/v6.0/core/data-modeling-introduction/
 
 
 ## Histórico de versões
@@ -86,4 +168,5 @@ O frontend consiste na parte visual e utilitária ao qual o usuário interage, n
 | Versão | Alteração       | Responsável         | Data Alteração |
 |--------|-----------------|---------------------|----------------|
 | 1.0    | Criação do documento, descrição da visão geral, metas e restrições  e criação de diagrama de tecnologias  | Felipe Candido de Moura | 28/04/2025 |
-| 1.1  | Criação da Arquitetura do Banco de Dados | Diógenes Dantas Lélis Júnior | 29/04/2025 |
+| 1.1    | Criação da Arquitetura do Banco de Dados | Diógenes Dantas Lélis Júnior | 29/04/2025 |
+| 1.2    | Criação diagrama de sequência e classes | Bruno Seiji Kishibe | 29/04/2025 |
