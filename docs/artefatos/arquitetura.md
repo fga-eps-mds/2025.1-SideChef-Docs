@@ -14,7 +14,7 @@ O software consiste em uma aplicação mobile arquitetada em microsserviços, co
 
 ## Representação da Arquitetura 
 
-### Diagrama de Tecnologias
+### 1. Diagrama de Tecnologias
 
 ![DiagramaTecnologias](../assets/diagramaTecnologias.jpg)
 **Autor:** Felipe Moura
@@ -32,18 +32,58 @@ O microsserviço RecipeService é responável pela gerência e armazenamento das
 #### FrontEnd
 O frontend consiste na parte visual e utilitária ao qual o usuário interage, no caso será o aplicativo mobile desenvolvido em React Native.
 
-### Arquitetura de banco de dados
+### 2. Diagrama de Classes
 
-### Diagrama de Classes
+### 3. Arquitetura de banco de dados
 
+### 3.1 Diagrama Entidade Relacionamento
+
+#### 3.1.1 Microsserviço do Usuário (UserService)
+![DiagramaEntidadeRelacionamento](../assets/diagramaEntidadeRelacionamento.png)<br>
+**Autor:** Diógenes Júnior
+
+#### 3.1.2 Microsserviço das Receitas (RecipeService)
+```json
+{
+  "id": "id-da-receita",
+  "nome": "nome",
+  "ingredientes": ["ingrediente_1", "ingrediente_2"],
+  "instrucoes": "Instruções",
+  "usuarios_que_salvaram": [
+    "id-do-usuario-1",
+    "id-do-usuario-2"
+  ]
+}
+```
+**Autor:** Diógenes Júnior
+
+### 3.2 Modelo Lógico de Dados
+
+#### 3.2.1 Microsserviço do Usuário (UserService)
+![ModeloLógicoDeDadosUsuário](../assets/logicaDeDados.png)<br>
+**Autor:** Diógenes Júnior
+
+#### 3.2.2 Microsserviço das Receitas (RecipeService)
+```json
+{
+  "id": "<ObjectId>",               
+  "nome": "string",                      
+  "ingredientes": ["string"],          
+  "instrucoes": "string",               
+  "usuarios_que_salvaram": ["string"]    
+}
+```
+**Autor:** Diógenes Júnior
 
 ## Referências Bibliográficas
 > [1] EQUIPE ARANDU 2024-2. Documento de Arquitetura. Disponível em: https://fga-eps-mds.github.io/2024.2-ARANDU-DOC/projeto/arquitetura/  
 > [2] EQUIPE SYSARQ 2021-1. Documento de Arquitetura. Disponível em: https://fga-eps-mds.github.io/2021.1-PC-GO1/doc_arquitetura/ 
+> [3] Documentação Oficial MongoDB. Disponível em: https://www.mongodb.com/pt-br/docs/v6.0/core/data-modeling-introduction/
 
 
 ## Histórico de versões
 
 | Versão | Alteração       | Responsável         | Data Alteração |
 |--------|-----------------|---------------------|----------------|
-| 1.0    | Criação do documento, descrição da visão geral, metas e restrições  e criação de diagramade tecnologias  | Felipe Candido de Moura | 28/04/2025 |
+| 1.0    | Criação do documento, descrição da visão geral, metas e restrições  e criação de diagrama de tecnologias  | Felipe Candido de Moura | 28/04/2025 |
+| 1.1  | Criação da Arquitetura do Banco de Dados | Diógenes Dantas Lélis Júnior | 29/04/2025 |
