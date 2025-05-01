@@ -36,7 +36,7 @@ O frontend consiste na parte visual e utilitária ao qual o usuário interage, n
 
 ```mermaid
 ---
-title: Side Chef diagrama de sequência
+title: Side Chef diagrama de sequência usuários
 ---
 sequenceDiagram
     actor Usuario
@@ -54,8 +54,35 @@ sequenceDiagram
     UserService->>-Mobile: status code 201
     Mobile->>-Usuario: Usuario logado com sucesso
 
+```
+
+```mermaid
+---
+title: Side Chef diagrama de sequência receitas
+---
+sequenceDiagram
+    actor Usuario
     Usuario->>+Mobile: Pesquisa lista de receitas
-    Mobile->>+RecipeService
+    Mobile->>+RecipeService: GET recitas
+    RecipeService->>+MongoDB: Consulta receitas no banco
+    MongoDB->>-RecipeService: Retorna receitas encontradas no banco
+    RecipeService->>-Mobile: Retorna lista de receitas encontradas
+    Mobile->>-Usuario: Mostra lista de receitas pesquisadas
+
+    Usuario->>+Mobile: Clica em adicionar receitas
+    Mobile->>Usuario: Atualiza página
+    Usuario->>Mobile: Adiciona ingrediente
+    Mobile->>Usuario: Aciona câmera
+    Usuario->>Mobile: Tira a foto
+    Mobile->>+RecipeService: POST ingrediente
+    RecipeService->>+RecipeService: Aciona OCR para verificar texto
+    RecipeService->>-RecipeService: Retorna texto verificado OCR
+    RecipeService->>Mobile: Aciona ingrediente a lista
+    Mobile->>RecipeService: POST Receitas
+    RecipeService->>+MongoDB: Adiciona receita ao banco
+    MongoDB->>-RecipeService: Retorna receitas finalizada
+    RecipeService->>-Mobile: Retorna receita adicionada
+    Mobile->>-Usuario: Mostra receita adicionada
 
 ```
 **Autor:** Bruno Kishibe
