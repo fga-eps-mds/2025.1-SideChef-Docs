@@ -1,4 +1,4 @@
-site_name: App Receitas
+site_name: SideChef
 
 repo_name: fga-eps-mds/2025.1-AppReceitas-Docs
 repo_url: https://github.com/fga-eps-mds/2025.1-AppReceitas-Docs
@@ -15,9 +15,15 @@ markdown_extensions:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
+plugins:
+  - search
+  - mermaid2:
+      javascript: https://unpkg.com/mermaid@10.4.0/dist/mermaid.esm.min.mjs
+  
 nav: 
   - Início: index.md
   - Artefatos:
+    - Documentação da Arquitetura: artefatos/arquitetura.md
     - Lean Inception: artefatos/leaninception.md
   - Planejamento: 
     - Comunicação: planejamento/comunicacao.md
@@ -30,6 +36,7 @@ nav:
       - Reunião 1 (Lean Inception): sprints/atas_reunioes/ata1.md
       - Reunião 2 (Lean Inception): sprints/atas_reunioes/ata2.md
       - Reunião 3 (Lean Inception): sprints/atas_reunioes/ata3.md
-    - Sprint 1: sprints/sprint_1.md
+    - Sprint 1: 
+      - Planning 1: sprints/Sprint_1/planning.md
   - Políticas: 
     - Politica de commmits: politicas/politica_commits.md
