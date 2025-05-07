@@ -25,6 +25,7 @@ nav:
   - Artefatos:
     - Documentação da Arquitetura: artefatos/arquitetura.md
     - Lean Inception: artefatos/leaninception.md
+    - Protótipos: artefatos/prototipos.md
   - Planejamento: 
     - Comunicação: planejamento/comunicacao.md
     - Conhecimento: planejamento/conhecimento.md
