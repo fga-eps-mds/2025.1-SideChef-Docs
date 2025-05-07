@@ -38,5 +38,7 @@ nav:
       - Reunião 3 (Lean Inception): sprints/atas_reunioes/ata3.md
     - Sprint 1: 
       - Planning 1: sprints/Sprint_1/planning.md
+    - Sprint 2:
+      - Planning 2: sprints/Sprint_2/planning.md
   - Políticas: 
     - Politica de commmits: politicas/politica_commits.md
