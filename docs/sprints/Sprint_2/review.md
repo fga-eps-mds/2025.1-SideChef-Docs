@@ -38,6 +38,16 @@ Review da Sprint 2, realizando as seguintes atividades:
 
 - Pouco tempo para realização das atividades por alguns membros do grupo
 
+### Riscos
+
+### Burndown
+
+### Velocity
+
+### Comulative Flow
+
+### Control Charts
+
 ## Participantes
 
 | Nome completo                                 | Matrícula   | Turma |
