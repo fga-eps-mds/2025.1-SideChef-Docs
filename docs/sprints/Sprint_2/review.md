@@ -40,13 +40,28 @@ Review da Sprint 2, realizando as seguintes atividades:
 
 ### Riscos
 
+![GraficoRiscos](../../assets/sprint2/GraficoRiscosSprint2.png)
+**Grafico De riscos Sprint 2**
+
 ### Burndown
+
+![GraficoBurndown](../../assets/sprint2/BurndownSprint2.png)
+**Grafico BurnDown Sprint 2**
 
 ### Velocity
 
+![GraficoVelocity](../../assets/sprint2/VelocitySprint2.png)
+**Grafico Velocity Sprint2**
+
 ### Comulative Flow
 
+![CumulativeFlow](../../assets/sprint2/CumulativeFlowSprint2.png)
+**Grafico Cumulative Flow Sprint 2**
+
 ### Control Charts
+
+![ControlCharts](../../assets/sprint2/ControlChartsSprint2.png)
+**Grafico ControlCharts Sprint 2**
 
 ## Participantes
 
@@ -78,3 +93,4 @@ Review da Sprint 2, realizando as seguintes atividades:
 | Versão | Alteração       | Responsável         | Data Alteração |
 |--------|-----------------|---------------------|----------------|
 | 1.0    | Criação da ata  | Bruno Seiji Kishibe | 07/05/2025     |
+| 1.1    | Adição graficos | Bruno Seiji Kishibe | 15/05/2025     |
