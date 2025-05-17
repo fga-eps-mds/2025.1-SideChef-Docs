@@ -30,6 +30,7 @@ Abaixo estão listados os riscos e a análise quantitativa dos riscos identifica
 | Sprint 1                | Baixo conhecimento a respeito das tecnologias       | 10            | 10      |
 | Sprint 1                | Erros arquiteturais                                 | 7             | 10      |
 | Sprint 1                | Não participação dos membros da equipe nas reuniões | 9             | 7       |
+| Sprint 2                | Baixa disponibilidade de tempo por alguns membros   | 7             | 10      |
 
 
 ## Resposta aos riscos
