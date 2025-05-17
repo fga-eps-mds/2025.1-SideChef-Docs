@@ -2,6 +2,10 @@
 
 ## Reunião 7 - 07/05/2025 20:00
 
+PO - Diógenes Dantas Lélis Júnior
+
+Scrum Master - Bruno Seiji Kishibe
+
 ### Atividades realizas
 
 Review da Sprint 2, realizando as seguintes atividades:
@@ -18,25 +22,31 @@ Review da Sprint 2, realizando as seguintes atividades:
 
 ### Entregas da sprint
 
-- Protótipo de baixa fidelidade.
+- Protótipo de baixa fidelidade (MDS). Issue: [Criar protótipo de baixa fidelidade](https://app.zenhub.com/workspaces/2025-1time3ocr-67f593a6ef2d81000f2d84b4/issues/gh/fga-eps-mds/2025.1-sidechef-docs/1)
 
-- Repositório com teste básico da funcionalidade do OCR.
+- Repositório com teste básico da funcionalidade do OCR (MDS). Issue: [Pesquisar soluções OCR, discutir e testar implementação](https://app.zenhub.com/workspaces/2025-1time3ocr-67f593a6ef2d81000f2d84b4/issues/gh/fga-eps-mds/2025.1-sidechef-docs/27)
 
-- CSV com receitas para popular o banco.
+- CSV com receitas para popular o banco (MDS). Issue: [Criar csv com dados sobre receitas](https://app.zenhub.com/workspaces/2025-1time3ocr-67f593a6ef2d81000f2d84b4/issues/gh/fga-eps-mds/2025.1-sidechef-docs/26)
 
-- Tela com logo.
+- Tela com logo (MDS). Issue: [Criar tela com logo](https://app.zenhub.com/workspaces/2025-1time3ocr-67f593a6ef2d81000f2d84b4/issues/gh/fga-eps-mds/2025.1-sidechef-docs/25)
 
-- Tela inicial mobile.
+- Tela inicial mobile (MDS). Issue: [Criar tela processando informações](https://app.zenhub.com/workspaces/2025-1time3ocr-67f593a6ef2d81000f2d84b4/issues/gh/fga-eps-mds/2025.1-sidechef-docs/24)
+
+- Documentar riscos (EPS). Issue: [Documentar o planejamento de riscos](https://app.zenhub.com/workspaces/2025-1time3ocr-67f593a6ef2d81000f2d84b4/issues/gh/fga-eps-mds/2025.1-sidechef-docs/17)
+
+- Criação dos repositórios dos microserviços (EPS). Issue: [Criação dos repositórios dos microserviços](https://app.zenhub.com/workspaces/2025-1time3ocr-67f593a6ef2d81000f2d84b4/issues/gh/fga-eps-mds/2025.1-sidechef-docs/5)
+
+- Criação documento de arquitetura (EPS). Issue: [Criação documento de arquitetura](https://app.zenhub.com/workspaces/2025-1time3ocr-67f593a6ef2d81000f2d84b4/issues/gh/fga-eps-mds/2025.1-sidechef-docs/6)
 
 ### Pendências da sprint
 
-- Protótipo de alta fidelidade finalizado.
+- Protótipo de alta fidelidade finalizado (MDS). Issue: [Criar protótipo de alta fidelidade](https://app.zenhub.com/workspaces/2025-1time3ocr-67f593a6ef2d81000f2d84b4/issues/gh/fga-eps-mds/2025.1-sidechef-docs/20)
 
 ### Dificuldades
 
-- Cansaço devido ao horário de início e a duração da reunião
+- Cansaço devido ao horário de início e a duração da reunião.
 
-- Pouco tempo para realização das atividades por alguns membros do grupo
+- Pouco tempo para realização das atividades por alguns membros do grupo.
 
 ### Riscos
 
@@ -94,3 +104,4 @@ Review da Sprint 2, realizando as seguintes atividades:
 |--------|-----------------|---------------------|----------------|
 | 1.0    | Criação da ata  | Bruno Seiji Kishibe | 07/05/2025     |
 | 1.1    | Adição graficos | Bruno Seiji Kishibe | 15/05/2025     |
+| 1.2    | Linkar issues da sprint | Bruno Seiji Kishibe | 16/05/2025 |
