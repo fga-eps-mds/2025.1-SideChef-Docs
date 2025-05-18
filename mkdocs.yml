@@ -42,5 +42,9 @@ nav:
       - Planning 1: sprints/Sprint_1/planning.md
     - Sprint 2:
       - Planning 2: sprints/Sprint_2/planning.md
+      - Review 2: sprints/Sprint_2/review.md
+    - Sprint 3:
+      - Planning 3: sprints/Sprint_3/planning.md
+      - Review 3: sprints/Sprint_3/review.md
   - Políticas: 
     - Politica de commmits: politicas/politica_commits.md
