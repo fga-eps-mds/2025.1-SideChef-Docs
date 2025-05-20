@@ -1,6 +1,6 @@
 # Ata da Reunião 7
 
-## Reunião 7 - 07/05/2025 20:00
+## Reunião 7 - 07/05/2025 21:00
 
 PO - Diógenes Dantas Lélis Júnior
 
@@ -105,3 +105,5 @@ Review da Sprint 2, realizando as seguintes atividades:
 | 1.0    | Criação da ata  | Bruno Seiji Kishibe | 07/05/2025     |
 | 1.1    | Adição graficos | Bruno Seiji Kishibe | 15/05/2025     |
 | 1.2    | Linkar issues da sprint | Bruno Seiji Kishibe | 16/05/2025 |
+| 1.3    | Correção do horário da reunião | Felipe Candido de Moura | 20/05/2025 |
+

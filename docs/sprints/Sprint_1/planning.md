@@ -3,6 +3,10 @@
 
 ## Reunião 4 - 23/04/2025 20:00
 
+PO - Bruno Seiji Kishibe
+
+Scrum Master - Felipe Candido de Moura
+
 ### Atividades realizas
 
 Planning da Sprint 1, realizando as seguintes atividades:
@@ -50,3 +54,5 @@ Planning da Sprint 1, realizando as seguintes atividades:
 | Versão | Alteração       | Responsável         | Data Alteração |
 |--------|-----------------|---------------------|----------------|
 | 1.0    | Criação da ata  | Diógenes Dantas Lélis Júnior | 23/04/2025 |
+| 1.1    | Adição das atuações da sprint  | Felipe Candido de Moura | 20/05/2025 |
+
