@@ -60,12 +60,12 @@ Por ser a primeira Sprint, o gráfico de burndown ainda não estava disponível.
 ### Velocity
 
 ![GraficoVelocity](../../assets/sprint1/velocity_sprint_1.png)
-**Grafico Velocity Sprint2**
+**Grafico Velocity Sprint 1**
 
 ### Comulative Flow
 
 ![CumulativeFlow](../../assets/sprint1/cmflow_sprint_1.png)
-**Grafico Cumulative Flow Sprint 2**
+**Grafico Cumulative Flow Sprint 1**
 
 ### Control Charts
 
