@@ -21,33 +21,33 @@ Review da Sprint 3, realizando as seguintes atividades:
 
 ### Entregas da sprint
 
-- Criar template Pull Request. Issue: https://app.zenhub.com/workspaces/2025-1time3ocr-67f593a6ef2d81000f2d84b4/issues/gh/fga-eps-mds/2025.1-sidechef-docs/35
+- Criar template Pull Request. Issue: [Criar template Pull Request](https://app.zenhub.com/workspaces/2025-1time3ocr-67f593a6ef2d81000f2d84b4/issues/gh/fga-eps-mds/2025.1-sidechef-docs/35)
 
-- Configurar docker do repositório UserService. Issue: https://app.zenhub.com/workspaces/2025-1time3ocr-67f593a6ef2d81000f2d84b4/issues/gh/fga-eps-mds/2025.1-sidechef-docs/40
+- Configurar docker do repositório UserService. Issue: [Configurar docker do repositório UserService](https://app.zenhub.com/workspaces/2025-1time3ocr-67f593a6ef2d81000f2d84b4/issues/gh/fga-eps-mds/2025.1-sidechef-docs/40)
 
-- Configurar docker do repositório RecipeService. Issue: https://app.zenhub.com/workspaces/2025-1time3ocr-67f593a6ef2d81000f2d84b4/issues/gh/fga-eps-mds/2025.1-sidechef-docs/41
+- Configurar docker do repositório RecipeService. Issue: [Configurar docker do repositório RecipeService](https://app.zenhub.com/workspaces/2025-1time3ocr-67f593a6ef2d81000f2d84b4/issues/gh/fga-eps-mds/2025.1-sidechef-docs/41)
 
-- Adicionar câmera ao aplicativo. Issue: https://app.zenhub.com/workspaces/2025-1time3ocr-67f593a6ef2d81000f2d84b4/issues/gh/fga-eps-mds/2025.1-sidechef-docs/33
+- Adicionar câmera ao aplicativo. Issue: [Adicionar câmera ao aplicativo](https://app.zenhub.com/workspaces/2025-1time3ocr-67f593a6ef2d81000f2d84b4/issues/gh/fga-eps-mds/2025.1-sidechef-docs/33)
 
-- Implantação do OCR em FastAPI. Issue: https://app.zenhub.com/workspaces/2025-1time3ocr-67f593a6ef2d81000f2d84b4/issues/gh/fga-eps-mds/2025.1-sidechef-docs/36
+- Implantação do OCR em FastAPI. Issue: [Implantação do OCR em FastAPI](https://app.zenhub.com/workspaces/2025-1time3ocr-67f593a6ef2d81000f2d84b4/issues/gh/fga-eps-mds/2025.1-sidechef-docs/36)
 
-- Endpoint de cadastro de usuário. Issue: https://app.zenhub.com/workspaces/2025-1time3ocr-67f593a6ef2d81000f2d84b4/issues/gh/fga-eps-mds/2025.1-sidechef-docs/37
+- Endpoint de cadastro de usuário. Issue: [Endpoint de cadastro de usuário](https://app.zenhub.com/workspaces/2025-1time3ocr-67f593a6ef2d81000f2d84b4/issues/gh/fga-eps-mds/2025.1-sidechef-docs/37)
 
 ### Pendências da sprint
 
-- US01 - Vizualizar Receitas. Issue: https://app.zenhub.com/workspaces/2025-1time3ocr-67f593a6ef2d81000f2d84b4/issues/gh/fga-eps-mds/2025.1-sidechef-docs/10
+- US01 - Vizualizar Receitas. Issue: [US01 - Vizualizar Receitas](https://app.zenhub.com/workspaces/2025-1time3ocr-67f593a6ef2d81000f2d84b4/issues/gh/fga-eps-mds/2025.1-sidechef-docs/10)
 
-- US02 - Criação de filtros para receitas. Issue: https://app.zenhub.com/workspaces/2025-1time3ocr-67f593a6ef2d81000f2d84b4/issues/gh/fga-eps-mds/2025.1-sidechef-docs/11
+- US02 - Criação de filtros para receitas. Issue: [US02 - Criação de filtros para receitas](https://app.zenhub.com/workspaces/2025-1time3ocr-67f593a6ef2d81000f2d84b4/issues/gh/fga-eps-mds/2025.1-sidechef-docs/11)
 
-- US04 - Identificação de ingredientes por meio de OCR. Issue: https://app.zenhub.com/workspaces/2025-1time3ocr-67f593a6ef2d81000f2d84b4/issues/gh/fga-eps-mds/2025.1-sidechef-docs/13
+- US04 - Identificação de ingredientes por meio de OCR. Issue: [US04 - Identificação de ingredientes por meio de OCR](https://app.zenhub.com/workspaces/2025-1time3ocr-67f593a6ef2d81000f2d84b4/issues/gh/fga-eps-mds/2025.1-sidechef-docs/13)
 
-- Documentar o planejamento de custos. Issue: https://app.zenhub.com/workspaces/2025-1time3ocr-67f593a6ef2d81000f2d84b4/issues/gh/fga-eps-mds/2025.1-sidechef-docs/18
+- Documentar o planejamento de custos. Issue: [Documentar o planejamento de custos](https://app.zenhub.com/workspaces/2025-1time3ocr-67f593a6ef2d81000f2d84b4/issues/gh/fga-eps-mds/2025.1-sidechef-docs/18)
 
-- Criar protótipo de alta fidelidade. Issue: https://app.zenhub.com/workspaces/2025-1time3ocr-67f593a6ef2d81000f2d84b4/issues/gh/fga-eps-mds/2025.1-sidechef-docs/20
+- Criar protótipo de alta fidelidade. Issue: [Criar protótipo de alta fidelidade](https://app.zenhub.com/workspaces/2025-1time3ocr-67f593a6ef2d81000f2d84b4/issues/gh/fga-eps-mds/2025.1-sidechef-docs/20)
 
-- Configurar CI repositório mobile. Issue: https://app.zenhub.com/workspaces/2025-1time3ocr-67f593a6ef2d81000f2d84b4/issues/gh/fga-eps-mds/2025.1-sidechef-docs/28
+- Configurar CI repositório mobile. Issue: [Configurar CI repositório mobile](https://app.zenhub.com/workspaces/2025-1time3ocr-67f593a6ef2d81000f2d84b4/issues/gh/fga-eps-mds/2025.1-sidechef-docs/28)
 
-- Endpoint para receber todas as receitas do MongoDB. Issue: https://app.zenhub.com/workspaces/2025-1time3ocr-67f593a6ef2d81000f2d84b4/issues/gh/fga-eps-mds/2025.1-sidechef-docs/38
+- Endpoint para receber todas as receitas do MongoDB. Issue: [Configurar CI repositório mobile](https://app.zenhub.com/workspaces/2025-1time3ocr-67f593a6ef2d81000f2d84b4/issues/gh/fga-eps-mds/2025.1-sidechef-docs/38)
 
 ### Dificuldades
 - Cansaço devido ao horário de início e a duração da reunião
@@ -108,5 +108,6 @@ Review da Sprint 3, realizando as seguintes atividades:
 | Versão | Alteração       | Responsável         | Data Alteração |
 |--------|-----------------|---------------------|----------------|
 | 1.0    | Criação da ata  | Diógenes Dantas Lélis Júnior | 20/05/2025     |
+| 1.1    | Edita links da Entregas da Sprint e Pendências da Sprint  | Diógenes Dantas Lélis Júnior | 20/05/2025     |
 
 
