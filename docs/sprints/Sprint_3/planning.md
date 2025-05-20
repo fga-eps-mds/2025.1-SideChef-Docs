@@ -73,3 +73,4 @@ Planning da Sprint 3, realizando as seguintes atividades:
 | 1.0    | Criação da ata  | Bruno Seiji Kishibe | 07/05/2025     |
 | 1.1    | Adicionar issues da sprint | Bruno Seiji Kishibe | 16/05/2025 |
 | 1.2    | Correção do PO | Felipe Candido de Moura | 20/05/2025 |
+
