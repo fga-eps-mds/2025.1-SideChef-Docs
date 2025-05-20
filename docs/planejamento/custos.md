@@ -15,3 +15,28 @@ Na categoria de equipamentos, foram incluídos os custos de aquisição de itens
 ## Infraestutura
 Para estimar os custos com infraestrutura, foram considerados energia elétrica e internet, com base nos valores praticados na região de Brasília – DF
 
+## Valores estimados
+
+Infraestrutura - R$ 507,20
+
+Investimento equipamentos - R$ 58.700,00
+
+Equipe de desenvolvimento - R$ 28.768,00
+
+Hospedagem - R$ 0,00
+
+Valor total - R$ 87.975,20
+
+## Documento
+
+
+<div width= 900px>
+<iframe src="https://docs.google.com/spreadsheets/d/1i5JWInrWrBhh6_UjfyeFInkoLYlUCRKaVceh7Z-dXvI/edit?gid=0#gid=0" width="900" height="700"></iframe>
+</div>
+
+[Link para acessar a planilha](https://docs.google.com/spreadsheets/d/1i5JWInrWrBhh6_UjfyeFInkoLYlUCRKaVceh7Z-dXvI/edit?gid=0#gid=0)
+
+
+## Referências
+
+[1] Portas abertas ao cidadão. Correio Braziliense, Brasília, 5 mar. 2015. Disponível em: https://www.correiobraziliense.com.br/app/noticia/eu-estudante/ensino_ensinosuperior/2015/03/05/ensino_ensinosuperior_interna,474102/portas-abertas-ao-cidadao.shtml. Acesso em: 20 maio 2025.
