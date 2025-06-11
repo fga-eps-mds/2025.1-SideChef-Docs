@@ -3,7 +3,9 @@
 | Versão | Alteração       | Responsável         | Data Alteração |
 |--------|-----------------|---------------------|----------------|
 | 1.0    | Criação do documento de política de commits  | Diógenes Dantas Lélis Júnior | 08/06/2025 |
-| 1.1    | Adiciona o restante da documentação da Diretrizes do Projeto | Diógenes Dantas Lélis Júnior | 10/06/2025 |
+| 1.1    | Criação da Diretrizes de padronização de código | Pedro Amaral e João Marcelo Naves | 27/05/2025 |
+| 1.2    | Adiciona o restante da documentação da Diretrizes do Projeto | Diógenes Dantas Lélis Júnior | 10/06/2025 |
+| 1.3    | Correções padronização e nas tecnologias do mobile | Bruno Seiji Kishibe | 11/06/2025 |
 
 ## Diretrizes do Projeto
 Esse documento abrange as diretrizes que devem ser seguidas no projeto, abordando temas como estrutura do código, estrutura de diretórios, organização e importação de código
@@ -59,7 +61,7 @@ O arquivo principal da aplicação (comumente main.py ou app.py na raiz do diret
 - Ponto de Paretida do Servidor (em Contexto Docker):
     - Ao usar Docker, o comando para iniciar o servidor ASGI (como Uvicorn) é geralmente especificado no Dockerfile (ex: CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "80"]). O arquivo main.py em si não precisa conter a lógica explícita uvicorn.run() para este cenário, pois o Docker gerencia o ciclo de vida do processo.
 
-### 3. JavaScript
+### 3. TypeScript
 
 #### Funções
 - Use camelCase (a primeira palavra em minúscula, as demais com inicial maiúscula). 
@@ -70,25 +72,25 @@ O arquivo principal da aplicação (comumente main.py ou app.py na raiz do diret
     - Exemplo: MainComponent
 
 #### Nome de Arquivos
-- Componentes React: PascalCase.jsx
-    - Exemplo: UserCard.jsx
-- Utilitários ou Funções Auxiliares: camelCase.js
-    - Exemplo: formatDate.js
+- Componentes React: PascalCase.tsx
+    - Exemplo: UserCard.tsx
+- Utilitários ou Funções Auxiliares: camelCase.ts
+    - Exemplo: formatDate.ts
 
-### 4. React + CSS
+### 4. React + StyleSheet
 
 #### React
-O React adere às convenções de nomenclatura do JavaScript previamente delineadas:
+O React adere às convenções de nomenclatura do TypeScript previamente delineadas:
 - Funções são nomeadas utilizando camelCase.
 - Componentes e classes são nomeados utilizando PascalCase
 
-#### CSS
+#### StyleSheet
 - Os estilos devem ser definidos em arquivos .ts separados.
 - Empregue nomes de classes descritivos utilizando kebab-case (palavras em minúsculo separadas por hífens).
     - Exemplo: .main-container
 
 #### Organização e importação
-- O CSS deve ser importado no topo do arquivo do componente correspondente.
+- O StyleSheet deve ser importado no topo do arquivo do componente correspondente.
     - Exemplo: import './UserCard.ts';
 - Evite estilos inline sempre que possível, priorizando o uso de classes.
 - Agrupe estilos relacionados no mesmo arquivo para facilitar a manutenção.
