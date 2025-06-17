@@ -1,3 +1,12 @@
+## Histórico de versões
+
+| Versão | Alteração       | Responsável         | Data Alteração |
+|--------|-----------------|---------------------|----------------|
+| 1.0    | Criação do documento, descrição da visão geral, metas e restrições  e criação de diagrama de tecnologias  | Felipe Candido de Moura | 28/04/2025 |
+| 1.1    | Criação da Arquitetura do Banco de Dados | Diógenes Dantas Lélis Júnior | 29/04/2025 |
+| 1.2    | Criação diagrama de sequência e classes | Bruno Seiji Kishibe | 29/04/2025 |
+| 1.3    | Criação diagrama de pacotes do UserService e RecipeService | Diógenes Dantas Lélis Júnior | 19/05/2025 |
+
 ## Visão geral
 Este documento visa registrar a aquitetura proposta para o projeto SideChef. 
 
@@ -200,11 +209,4 @@ classDiagram
 > [4] Documentação Oficial MongoDB. Disponível em: https://www.mongodb.com/pt-br/docs/v6.0/core/data-modeling-introduction/
 
 
-## Histórico de versões
 
-| Versão | Alteração       | Responsável         | Data Alteração |
-|--------|-----------------|---------------------|----------------|
-| 1.0    | Criação do documento, descrição da visão geral, metas e restrições  e criação de diagrama de tecnologias  | Felipe Candido de Moura | 28/04/2025 |
-| 1.1    | Criação da Arquitetura do Banco de Dados | Diógenes Dantas Lélis Júnior | 29/04/2025 |
-| 1.2    | Criação diagrama de sequência e classes | Bruno Seiji Kishibe | 29/04/2025 |
-| 1.3    | Criação diagrama de pacotes do UserService e RecipeService | Diógenes Dantas Lélis Júnior | 19/05/2025 |

@@ -1,3 +1,9 @@
+## Histórico de versões
+
+| Versão | Alteração       | Responsável         | Data Alteração |
+|--------|-----------------|---------------------|----------------|
+| 1.0    | Criação do documento e escrita do documento  | Felipe Candido de Morua | 28/04/2025 |
+
 ## Objetivo
 Este documento visa registrar o que foi desenvolvido no workshop de Lean Inception realizado com toda a equipe para definição do MVP do projeto.
 
@@ -122,8 +128,4 @@ A etapa final do canvas MVP sumariza tudo o que foi pensado na aplicação do Le
 > [2] EQUIPE SYSARQ 2021-1. Documento de Arquitetura. Disponível em: https://fga-eps-mds.github.io/2021.1-PC-GO1/doc_arquitetura/ 
 
 > [3] CAROLI.org. Lean Inception: Saiba como alinhar pessoas e construir o produto certo. Disponível em: https://caroli.org/lean-inception-3/ 
-## Histórico de versões
 
-| Versão | Alteração       | Responsável         | Data Alteração |
-|--------|-----------------|---------------------|----------------|
-| 1.0    | Criação do documento e escrita do documento  | Felipe Candido de Morua | 28/04/2025 |

@@ -1,5 +1,11 @@
 # Ata da Reunião 1 (Lean Inception)
 
+## Histórico de versões
+
+| Versão | Alteração       | Responsável         | Data Alteração |
+|--------|-----------------|---------------------|----------------|
+| 1.0    | Criação da ata  | Bruno Seiji Kishibe | 13/04/2025     |
+| 1.1    | Adição do "o que foi feito" e dificuldades  | Diógenes Dantas Lélis Júnior | 16/04/2025     |
 
 ## Reunião 1 (Inicio da Lean Inception) - 13/04/2025 19:00
 
@@ -48,9 +54,3 @@ Apresentação inicial do projeto e início da Lean Inception
 | Yasmin Dayrell Albuquerque                    | Não pode comparecer pela mudança de horário da reunião (20H para 19H). Novo horário conflitava com agenda pessoal. | MDS   |
 
 
-## Histórico de versões
-
-| Versão | Alteração       | Responsável         | Data Alteração |
-|--------|-----------------|---------------------|----------------|
-| 1.0    | Criação da ata  | Bruno Seiji Kishibe | 13/04/2025     |
-| 1.1    | Adição do "o que foi feito" e dificuldades  | Diógenes Dantas Lélis Júnior | 16/04/2025     |

@@ -1,3 +1,10 @@
+## Histórico de versões
+
+| Versão | Alteração       | Responsável         | Data Alteração |
+|--------|-----------------|---------------------|----------------|
+| 1.0    | Criação do documento de política de commits  | Diógenes Dantas Lélis Júnior | 16/04/2025 |
+| 1.1    | Adição das políticas de commits: elementos estruturais e exemplos   | Diógenes Dantas Lélis Júnior | 17/04/2025 |
+
 ## Política de Commits
 
 No projeto será utilizado o Padrão de [Conventional Commits](https://www.conventionalcommits.org/pt-br/v1.0.0/). 
@@ -59,9 +66,3 @@ feat(lang): adiciona tradução para português brasileiro
 ```
 
 
-## Histórico de versões
-
-| Versão | Alteração       | Responsável         | Data Alteração |
-|--------|-----------------|---------------------|----------------|
-| 1.0    | Criação do documento de política de commits  | Diógenes Dantas Lélis Júnior | 16/04/2025 |
-| 1.1    | Adição das políticas de commits: elementos estruturais e exemplos   | Diógenes Dantas Lélis Júnior | 17/04/2025 |

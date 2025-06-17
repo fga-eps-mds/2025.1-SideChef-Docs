@@ -1,5 +1,11 @@
 # Ata da Reunião 5
 
+## Histórico de versões
+
+| Versão | Alteração       | Responsável         | Data Alteração |
+|--------|-----------------|---------------------|----------------|
+| 1.0    | Criação da ata  | Felipe Candido de Moura | 20/05/2025 |
+
 ## Reunião 5 - 30/04/2025 21:00
 
 PO - Bruno Seiji Kishibe
@@ -99,9 +105,5 @@ Por ser a primeira Sprint, o gráfico de control charts ainda não estava dispon
 
 
 
-## Histórico de versões
 
-| Versão | Alteração       | Responsável         | Data Alteração |
-|--------|-----------------|---------------------|----------------|
-| 1.0    | Criação da ata  | Felipe Candido de Moura | 20/05/2025 |
 

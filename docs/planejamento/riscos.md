@@ -1,5 +1,11 @@
 # Gerenciamento de riscos
 
+## Histórico de versões
+
+| Versão | Alteração       | Responsável         | Data Alteração |
+|--------|-----------------|---------------------|----------------|
+| 1.0    | Versão inicial do documento, incluindo introdução, planejamento, métricas, análise e resposta aos riscos  | Bruno Seiji Kishibe | 30/04/2025 |
+
 ## Introdução
 
 O gerênciamento de riscos representa um elemento importante dentro do gerênciamento de projetos, sendo uma das áreas de conhecimento embutidas dentro do PMBOK.
@@ -55,8 +61,3 @@ Nessa etapa definimos estratégias para resolução desses riscos.
 > [3] PROJECT MANAGEMENT INSTITUTE. Risk burndown. Disponível em: https://www.pmi.org/disciplined-agile/agile/riskburndown. Acesso em: 28 abr. 2025.
 
 
-## Histórico de versões
-
-| Versão | Alteração       | Responsável         | Data Alteração |
-|--------|-----------------|---------------------|----------------|
-| 1.0    | Versão inicial do documento, incluindo introdução, planejamento, métricas, análise e resposta aos riscos  | Bruno Seiji Kishibe | 30/04/2025 |

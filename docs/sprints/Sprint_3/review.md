@@ -1,5 +1,12 @@
 # Ata da Reunião 9
 
+## Histórico de versões
+
+| Versão | Alteração       | Responsável         | Data Alteração |
+|--------|-----------------|---------------------|----------------|
+| 1.0    | Criação da ata  | Diógenes Dantas Lélis Júnior | 20/05/2025     |
+| 1.1    | Edita links da Entregas da Sprint e Pendências da Sprint  | Diógenes Dantas Lélis Júnior | 20/05/2025     |
+
 ## Reunião 9 - 14/05/2025 20:00
 
 PO - Felipe Candido de Moura
@@ -103,11 +110,6 @@ Review da Sprint 3, realizando as seguintes atividades:
 | Felipe Candido de Moura                    | Estava em aniversário                                                  | EPS  |
 
 
-## Histórico de versões
 
-| Versão | Alteração       | Responsável         | Data Alteração |
-|--------|-----------------|---------------------|----------------|
-| 1.0    | Criação da ata  | Diógenes Dantas Lélis Júnior | 20/05/2025     |
-| 1.1    | Edita links da Entregas da Sprint e Pendências da Sprint  | Diógenes Dantas Lélis Júnior | 20/05/2025     |
 
 
