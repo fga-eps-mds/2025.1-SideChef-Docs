@@ -3,7 +3,7 @@
 | Versão | Alteração       | Responsável         | Data Alteração |
 |--------|-----------------|---------------------|----------------|
 | 1.0    | Criação do documento de protótipos e adição do protótipo de baixa fidelidade  | Diógenes Dantas Lélis Júnior | 06/05/2025 | 
-| 1.1    | Adição da Identidade Visual e do Protótipo de Alta Fidelidade  | Diógenes Dantas Lélis Júnior | 20/05/2025 | 
+| 1.1    | Adição da Identidade Visual e do Protótipo de Alta Fidelidade  | Diógenes Dantas Lélis Júnior, Yasmin Dayrell Albuquerque, João Marcelo Guimarães Costa Naves | 20/05/2025 | 
 
 ## Visão Geral
 Protótipos de baixa fidelidade são representações simples e rápidas de um app, geralmente feitos em papel ou com wireframes básicos, focando na estrutura e navegação. Já os de alta fidelidade são mais detalhados, incluindo cores, fontes e interações próximas do produto final. Ambos ajudam a validar ideias e melhorar a experiência do usuário antes do desenvolvimento.
