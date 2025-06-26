@@ -1,5 +1,11 @@
 # Ata da Reunião 2 (Lean Inception)
 
+## Histórico de versões
+
+| Versão | Alteração       | Responsável         | Data Alteração |
+|--------|-----------------|---------------------|----------------|
+| 1.0    | Criação da ata  | Diógenes Dantas Lélis Júnior | 16/04/2025 |
+| 1.1    | Adiciona justificativa | Bruno Seiji Kishibe | 16/04/2025 |
 
 ## Reunião 2 (Lean Inception) - 16/04/2025 20:00
 
@@ -44,9 +50,3 @@ Continuação do Lean Inception, incluindo as etapas:
 | Raissa Silva de Oliveira                      | Não pode comparecer por estar acompanhando a mãe em uma consulta | MDS   |
 
 
-## Histórico de versões
-
-| Versão | Alteração       | Responsável         | Data Alteração |
-|--------|-----------------|---------------------|----------------|
-| 1.0    | Criação da ata  | Diógenes Dantas Lélis Júnior | 16/04/2025 |
-| 1.1    | Adiciona justificativa | Bruno Seiji Kishibe | 16/04/2025 |

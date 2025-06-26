@@ -1,5 +1,14 @@
 # Ata da Reunião 6
 
+## Histórico de versões
+
+| Versão | Alteração       | Responsável         | Data Alteração |
+|--------|-----------------|---------------------|----------------|
+| 1.0    | Criação da ata  | Diógenes Dantas Lélis Júnior | 30/04/2025 |
+| 1.1    | Adição das justificativas das faltas | Diógenes Dantas Lélis Júnior | 01/05/2025 |
+| 1.2    | Adicionar issues da sprint | Bruno Seiji Kishibe | 16/05/2025 |
+| 1.3    | Correção do número da reunião | Felipe Candido de Moura | 20/05/2025 |
+
 
 ## Reunião 6 - 30/04/2025 20:00
 
@@ -68,12 +77,4 @@ Planning da Sprint 2, realizando as seguintes atividades:
 | Raissa Silva de Oliveira                      | Estava viajando durante a reunião   | MDS   |
 
 
-## Histórico de versões
-
-| Versão | Alteração       | Responsável         | Data Alteração |
-|--------|-----------------|---------------------|----------------|
-| 1.0    | Criação da ata  | Diógenes Dantas Lélis Júnior | 30/04/2025 |
-| 1.1    | Adição das justificativas das faltas | Diógenes Dantas Lélis Júnior | 01/05/2025 |
-| 1.2    | Adicionar issues da sprint | Bruno Seiji Kishibe | 16/05/2025 |
-| 1.3    | Correção do número da reunião | Felipe Candido de Moura | 20/05/2025 |
 

@@ -1,5 +1,10 @@
 # Ata da Reunião 3 (Lean Inception)
 
+## Histórico de versões
+
+| Versão | Alteração       | Responsável         | Data Alteração |
+|--------|-----------------|---------------------|----------------|
+| 1.0    | Criação da ata  | Felipe Candido de Moura | 20/04/2025 |
 
 ## Reunião 3 (Lean Inception) - 20/04/2025 20:00
 
@@ -42,8 +47,3 @@ Finalização do Lean Inception, incluindo:
 | Guilherme Negreiros Pereira                   | Sem Justificativa | MDS |
 | Yasmin Dayrell Albuquerque                    | Sem Justificativa  | MDS  |
 
-## Histórico de versões
-
-| Versão | Alteração       | Responsável         | Data Alteração |
-|--------|-----------------|---------------------|----------------|
-| 1.0    | Criação da ata  | Felipe Candido de Moura | 20/04/2025 |

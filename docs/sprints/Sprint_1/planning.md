@@ -1,5 +1,11 @@
 # Ata da Reunião 4 
 
+## Histórico de versões
+
+| Versão | Alteração       | Responsável         | Data Alteração |
+|--------|-----------------|---------------------|----------------|
+| 1.0    | Criação da ata  | Diógenes Dantas Lélis Júnior | 23/04/2025 |
+| 1.1    | Adição das atuações da sprint  | Felipe Candido de Moura | 20/05/202
 
 ## Reunião 4 - 23/04/2025 20:00
 
@@ -49,10 +55,5 @@ Planning da Sprint 1, realizando as seguintes atividades:
 |-----------------------------------------------|------------------------------------------------------|-------|
 
 
-## Histórico de versões
-
-| Versão | Alteração       | Responsável         | Data Alteração |
-|--------|-----------------|---------------------|----------------|
-| 1.0    | Criação da ata  | Diógenes Dantas Lélis Júnior | 23/04/2025 |
-| 1.1    | Adição das atuações da sprint  | Felipe Candido de Moura | 20/05/2025 |
+5 |
 

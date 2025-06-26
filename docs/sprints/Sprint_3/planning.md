@@ -1,5 +1,13 @@
 # Ata da Reunião 8
 
+## Histórico de versões
+
+| Versão | Alteração       | Responsável         | Data Alteração |
+|--------|-----------------|---------------------|----------------|
+| 1.0    | Criação da ata  | Bruno Seiji Kishibe | 07/05/2025     |
+| 1.1    | Adicionar issues da sprint | Bruno Seiji Kishibe | 16/05/2025 |
+| 1.2    | Correção do PO | Felipe Candido de Moura | 20/05/2025 |
+
 
 ## Reunião 8 - 07/05/2025 21:00
 
@@ -66,11 +74,4 @@ Planning da Sprint 3, realizando as seguintes atividades:
 | João Pedro Silveira                           |                                                      | MDS   |
 
 
-## Histórico de versões
-
-| Versão | Alteração       | Responsável         | Data Alteração |
-|--------|-----------------|---------------------|----------------|
-| 1.0    | Criação da ata  | Bruno Seiji Kishibe | 07/05/2025     |
-| 1.1    | Adicionar issues da sprint | Bruno Seiji Kishibe | 16/05/2025 |
-| 1.2    | Correção do PO | Felipe Candido de Moura | 20/05/2025 |
 

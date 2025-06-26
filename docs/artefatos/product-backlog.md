@@ -1,3 +1,8 @@
+## Histórico de versões
+| Versão | Alteração       | Responsável         | Data Alteração |
+|--------|-----------------|---------------------|----------------|
+| 1.0    | Criação do documento de Product Backlog, adiciona épicos e histórias de usuário | Diógenes Dantas Lélis Júnior | 17/05/2025 |
+
 ## Visão Geral
 Product Backlog ou Backlog do Produto é uma lista priorizada de tudo que pode ser necessário no produto, servindo como fonte de requisitos para o time Scrum. O documento é formado por épicos, histórias de usuário (US) e o product backlog do SideChef
 
@@ -72,9 +77,7 @@ Usuários podem criar, editar e salvar suas próprias receitas na plataforma.
 | **Descrição** | Eu, **como** usuário, **desejo** criar e salvar minhas próprias receitas no aplicativo, **para que eu possa** registrar e compartilhar minhas preparações culinárias. |
 | **Critérios de aceitação** |- O usuário deve ser capaz de visualizar e interagir com a tela de criação de receitas.</br> - O usuário deve ser capaz de ver as receitas criadas apenas por ele, e não por outros usuários. |
 
-| Versão | Alteração       | Responsável         | Data Alteração |
-|--------|-----------------|---------------------|----------------|
-| 1.0    | Criação do documento de Product Backlog, adiciona épicos e histórias de usuário | Diógenes Dantas Lélis Júnior | 17/05/2025 |
+
 
 
 

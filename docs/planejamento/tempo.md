@@ -1,5 +1,11 @@
 # Planejamento de Tempo
 
+## Histórico de versões
+
+| Versão | Alteração       | Responsável         | Data Alteração |
+|--------|-----------------|---------------------|----------------|
+| 1.0    | Criação e escrita do documento, e desenvolvimento da V1 do diagrama | Felipe Candido de Moura| 15/05/2025 |
+
 ## Descrição
 
 Este artefato visa planejar e estipular o tempo de cada atividade necessária para a entrega do produto de software almejado.
@@ -18,9 +24,3 @@ __Release 2 (Final):__ 17/07/2025
 ## Diagrama de Gantt V1
 
 ![Diagrama de Gantt](../assets/gantt_tempo.png)
-
-## Histórico de versões
-
-| Versão | Alteração       | Responsável         | Data Alteração |
-|--------|-----------------|---------------------|----------------|
-| 1.0    | Criação e escrita do documento, e desenvolvimento da V1 do diagrama | Felipe Candido de Moura| 15/05/2025 |
