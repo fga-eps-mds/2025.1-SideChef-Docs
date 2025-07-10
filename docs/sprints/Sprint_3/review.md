@@ -5,7 +5,8 @@
 | Versão | Alteração       | Responsável         | Data Alteração |
 |--------|-----------------|---------------------|----------------|
 | 1.0    | Criação da ata  | Diógenes Dantas Lélis Júnior | 20/05/2025     |
-| 1.1    | Edita links da Entregas da Sprint e Pendências da Sprint  | Diógenes Dantas Lélis Júnior | 20/05/2025     |
+| 1.1    | Edita links da Entregas da Sprint e Pendências da Sprint  | Diógenes Dantas Lélis Júnior | 20/05/2025 |
+| 1.2    | Edita gráfico de Riscos  | Diógenes Dantas Lélis Júnior | 10/07/2025 |
 
 ## Reunião 9 - 14/05/2025 20:00
 
@@ -61,7 +62,7 @@ Review da Sprint 3, realizando as seguintes atividades:
 
 ### Riscos
 
-![GraficoRiscos](../../assets/sprint2/GraficoRiscosSprint2.png)
+![GraficoRiscos](../../assets/sprint3/GraficoRiscoSprint3.png)
 **Grafico De riscos Sprint 3**
 
 ### Burndown
