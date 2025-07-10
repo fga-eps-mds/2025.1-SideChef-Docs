@@ -36,6 +36,8 @@ Planning da Sprint 4, realizando as seguintes atividades:
 
 - Bug na conexão do fastapi com o MongoDB. Issue: [Bug na conexão do fastapi com o MongoDB](https://app.zenhub.com/workspaces/2025-1time3ocr-67f593a6ef2d81000f2d84b4/issues/gh/fga-eps-mds/2025.1-sidechef-docs/55)
 
+- Atas Sprint3. Issue: [Atas sprint3](https://app.zenhub.com/workspaces/2025-1time3ocr-67f593a6ef2d81000f2d84b4/issues/gh/fga-eps-mds/2025.1-sidechef-docs/54)
+
 - Actions de Build no UserService. Issue: [Actions de Build no UserService](https://app.zenhub.com/workspaces/2025-1time3ocr-67f593a6ef2d81000f2d84b4/issues/gh/fga-eps-mds/2025.1-sidechef-docs/57)
 
 - Documentar Review da Sprint 3. Issue: [Documentar Review da Sprint 3](https://app.zenhub.com/workspaces/2025-1time3ocr-67f593a6ef2d81000f2d84b4/issues/gh/fga-eps-mds/2025.1-sidechef-docs/60)
