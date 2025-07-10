@@ -6,8 +6,7 @@
 |--------|-----------------|---------------------|----------------|
 | 1.0    | Criação da ata  | Bruno Seiji Kishibe | 27/06/2025     |
 | 1.1    | Edição de ata, adicionando as pendências e os gráficos da Sprint 4  | Diógenes Dantas Lélis Júnior | 10/07/2025  |
-
-
+| 1.2    | Adiciona gráfico de Riscos  | Diógenes Dantas Lélis Júnior | 10/07/2025  |
 
 ## Reunião 7 - 21/05/2025 21:00
 
@@ -79,7 +78,7 @@ Review da Sprint 2, realizando as seguintes atividades:
 
 ### Riscos
 
-![GraficoRiscos](../../assets/sprint2/GraficoRiscosSprint2.png)
+![GraficoRiscos](../../assets/sprint4/GraficoRiscosSprint4.png)
 **Grafico De riscos Sprint 4**
 
 ### Burndown
