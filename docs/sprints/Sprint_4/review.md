@@ -1,4 +1,4 @@
-# Ata da Reunião 7
+# Ata da Reunião 11
 
 ## Histórico de versões
 
@@ -7,24 +7,23 @@
 | 1.0    | Criação da ata  | Bruno Seiji Kishibe | 27/06/2025     |
 | 1.1    | Edição de ata, adicionando as pendências e os gráficos da Sprint 4  | Diógenes Dantas Lélis Júnior | 10/07/2025  |
 | 1.2    | Adiciona gráfico de Riscos  | Diógenes Dantas Lélis Júnior | 10/07/2025  |
+| 1.3    | Edita PO e Scrum Master da Ata  | Diógenes Dantas Lélis Júnior | 10/07/2025  |
 
-## Reunião 7 - 21/05/2025 21:00
+## Reunião 11 - 21/05/2025 21:00
 
-PO - Diógenes Dantas Lélis Júnior
+PO - Felipe Candido de Moura
 
 Scrum Master - Bruno Seiji Kishibe
 
 ### Atividades realizas
 
-Review da Sprint 2, realizando as seguintes atividades:
+Review da Sprint 4, realizando as seguintes atividades:
 
 - Mostrar o que atividades realizadas.
 
 - Alinhamento entre a equipe sobre o que foi e não foi feito.
 
 - Discução sobre o que foi feito.
-
-- Discução de como seguiremos com a solução do OCR
 
 - Levantamento de melhoras e do processo do time.
 
