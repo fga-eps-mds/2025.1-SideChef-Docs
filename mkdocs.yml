@@ -50,6 +50,15 @@ nav:
     - Sprint 4:
       - Planning 4: sprints/Sprint_4/planning.md
       - Review 4: sprints/Sprint_4/review.md
+    - Sprint 5:
+      - Planning 5: sprints/Sprint_5/planning.md
+      - Review 5: sprints/Sprint_5/review.md
+    - Sprint 6:
+      - Planning 6: sprints/Sprint_6/planning.md
+      - Review 6: sprints/Sprint_6/review.md
+    - Sprint 7:
+      - Planning 7: sprints/Sprint_7/planning.md
+      - Review 7: sprints/Sprint_7/review.md
   - Políticas: 
     - Politica de commmits: politicas/politica_commits.md
     - Diretrizes do Projeto: politicas/diretrizes.md
