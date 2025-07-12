@@ -7,7 +7,7 @@
 | 1.0    | Criação da ata  | Diógenes Dantas Lélis Júnior | 26/06/2025  |
 
 
-## Reunião 10 - 14/05/2025 21:00
+## Reunião 10 - 14/05/2025 20:00
 
 PO - Felipe Candido de Moura
 

@@ -6,7 +6,7 @@
 |--------|-----------------|---------------------|----------------|
 | 1.0    | Criação da ata  | Diógenes Dantas Lélis Júnior | 10/07/2025  |
 
-## Reunião 17 - 11/06/2025 21:00
+## Reunião 17 - 11/06/2025 20:00
 
 PO - Diógenes Dantas Lélis Júnior
 
