@@ -6,7 +6,7 @@
 |--------|-----------------|---------------------|----------------|
 | 1.0    | Criação da ata  | Diógenes Dantas Lélis Júnior | 12/07/2025  |
 
-## Reunião 21 - 25/06/2025 21:00
+## Reunião 21 - 25/06/2025 20:00
 
 PO - Bruno Seiji Kishibe
 
@@ -14,7 +14,7 @@ Scrum Master - Felipe Candito Moura
 
 ### Atividades realizas
 
-Review da Sprint 8, realizando as seguintes atividades:
+Review da Sprint 9, realizando as seguintes atividades:
 
 - Alinhamento entre a equipe sobre o que foi e não foi feito.
 

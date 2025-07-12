@@ -65,6 +65,12 @@ nav:
     - Sprint 9:
       - Planning 9: sprints/Sprint_9/planning.md
       - Review 9: sprints/Sprint_9/review.md 
+    - Sprint 10:
+      - Planning 10: sprints/Sprint_10/planning.md
+      - Review 10: sprints/Sprint_10/review.md
+    - Sprint 11:
+      - Planning 11: sprints/Sprint_11/planning.md
+      - Review 11: sprints/Sprint_11/review.md
   - Políticas: 
     - Politica de commmits: politicas/politica_commits.md
     - Diretrizes do Projeto: politicas/diretrizes.md

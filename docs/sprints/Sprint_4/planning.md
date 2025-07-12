@@ -5,6 +5,7 @@
 | Versão | Alteração       | Responsável         | Data Alteração |
 |--------|-----------------|---------------------|----------------|
 | 1.0    | Criação da ata  | Diógenes Dantas Lélis Júnior | 26/06/2025  |
+| 1.1    | Edição do horário da reunião  | Diógenes Dantas Lélis Júnior | 12/07/2025  |
 
 
 ## Reunião 10 - 14/05/2025 21:00

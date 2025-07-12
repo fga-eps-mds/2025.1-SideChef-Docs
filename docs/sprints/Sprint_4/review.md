@@ -9,7 +9,7 @@
 | 1.2    | Adiciona gráfico de Riscos  | Diógenes Dantas Lélis Júnior | 10/07/2025  |
 | 1.3    | Edita PO e Scrum Master da Ata  | Diógenes Dantas Lélis Júnior | 10/07/2025  |
 
-## Reunião 11 - 21/05/2025 21:00
+## Reunião 11 - 21/05/2025 20:00
 
 PO - Felipe Candido de Moura
 
