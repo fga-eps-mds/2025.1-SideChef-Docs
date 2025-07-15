@@ -1,12 +1,13 @@
-# Ata da Reunião 25
+# Ata da Reunião 27
 
 ## Histórico de versões
 
 | Versão | Alteração       | Responsável         | Data Alteração |
 |--------|-----------------|---------------------|----------------|
 | 1.0    | Criação da ata  | Diógenes Dantas Lélis Júnior | 14/07/2025  |
+| 1.1    | Edição da sequência da Reunião  | Diógenes Dantas Lélis Júnior | 15/07/2025  |
 
-## Reunião 25 - 16/07/2025 20:00
+## Reunião 27 - 16/07/2025 20:00
 
 PO - Diógenes Dantas Lélis Júnior
 
