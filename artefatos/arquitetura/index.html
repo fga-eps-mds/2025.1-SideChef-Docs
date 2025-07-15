@@ -1,0 +1,1624 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="../.." rel="prev"/>
+<link href="../leaninception/" rel="next"/>
+<link href="../../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.6.15" name="generator"/>
+<title>Documentação da Arquitetura - SideChef</title>
+<link href="../../assets/stylesheets/main.342714a4.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#historico-de-versoes">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="SideChef" class="md-header__button md-logo" data-md-component="logo" href="../.." title="SideChef">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            SideChef
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Documentação da Arquitetura
+            
+          </span>
+</div>
+</div>
+</div>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="" tabindex="0">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/fga-eps-mds/2025.1-AppReceitas-Docs" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+</div>
+<div class="md-source__repository">
+    fga-eps-mds/2025.1-AppReceitas-Docs
+  </div>
+</a>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<nav aria-label="Tabs" class="md-tabs" data-md-component="tabs">
+<div class="md-grid">
+<ul class="md-tabs__list">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../..">
+        
+  
+  
+    
+  
+  Início
+
+      </a>
+</li>
+<li class="md-tabs__item md-tabs__item--active">
+<a class="md-tabs__link" href="./">
+          
+  
+  
+  Artefatos
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../planejamento/comunicacao/">
+          
+  
+  
+  Planejamento
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../sprints/atas_reunioes/ata1/">
+          
+  
+  
+  Sprints
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../politicas/politica_commits/">
+          
+  
+  
+  Políticas
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../encerramento/post-mortem/">
+          
+  
+  
+  Encerramento
+
+        </a>
+</li>
+</ul>
+</div>
+</nav>
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="SideChef" class="md-nav__button md-logo" data-md-component="logo" href="../.." title="SideChef">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+</a>
+    SideChef
+  </label>
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/fga-eps-mds/2025.1-AppReceitas-Docs" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+</div>
+<div class="md-source__repository">
+    fga-eps-mds/2025.1-AppReceitas-Docs
+  </div>
+</a>
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../..">
+<span class="md-ellipsis">
+    Início
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+<span class="md-ellipsis">
+    Artefatos
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_2_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+            Artefatos
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    Documentação da Arquitetura
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+<span class="md-ellipsis">
+    Documentação da Arquitetura
+    
+  </span>
+</a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#historico-de-versoes">
+<span class="md-ellipsis">
+      Histórico de versões
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#visao-geral">
+<span class="md-ellipsis">
+      Visão geral
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#metas-e-restricoes-da-arquitetura">
+<span class="md-ellipsis">
+      Metas e restrições da arquitetura
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#representacao-da-arquitetura">
+<span class="md-ellipsis">
+      Representação da Arquitetura
+    </span>
+</a>
+<nav aria-label="Representação da Arquitetura" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#1-diagrama-de-tecnologias">
+<span class="md-ellipsis">
+      1. Diagrama de Tecnologias
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#servicos">
+<span class="md-ellipsis">
+      Serviços
+    </span>
+</a>
+<nav aria-label="Serviços" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#userservice">
+<span class="md-ellipsis">
+      UserService
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#recipeservice">
+<span class="md-ellipsis">
+      RecipeService
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#frontend">
+<span class="md-ellipsis">
+      FrontEnd
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#2-diagrama-de-sequencia">
+<span class="md-ellipsis">
+      2. Diagrama de sequência
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#3-diagrama-de-classes">
+<span class="md-ellipsis">
+      3. Diagrama de Classes
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#4-arquitetura-de-banco-de-dados">
+<span class="md-ellipsis">
+      4. Arquitetura de banco de dados
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#41-diagrama-entidade-relacionamento">
+<span class="md-ellipsis">
+      4.1 Diagrama Entidade Relacionamento
+    </span>
+</a>
+<nav aria-label="4.1 Diagrama Entidade Relacionamento" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#411-microsservico-do-usuario-userservice">
+<span class="md-ellipsis">
+      4.1.1 Microsserviço do Usuário (UserService)
+    </span>
+</a>
+<nav aria-label="4.1.1 Microsserviço do Usuário (UserService)" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#versao-1">
+<span class="md-ellipsis">
+      Versao 1
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#versao-2">
+<span class="md-ellipsis">
+      Versao 2
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#412-microsservico-das-receitas-recipeservice">
+<span class="md-ellipsis">
+      4.1.2 Microsserviço das Receitas (RecipeService)
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#42-modelo-logico-de-dados">
+<span class="md-ellipsis">
+      4.2 Modelo Lógico de Dados
+    </span>
+</a>
+<nav aria-label="4.2 Modelo Lógico de Dados" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#421-microsservico-do-usuario-userservice">
+<span class="md-ellipsis">
+      4.2.1 Microsserviço do Usuário (UserService)
+    </span>
+</a>
+<nav aria-label="4.2.1 Microsserviço do Usuário (UserService)" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#versao-1_1">
+<span class="md-ellipsis">
+      Versao 1
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#versao-2_1">
+<span class="md-ellipsis">
+      Versao 2
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#422-microsservico-das-receitas-recipeservice">
+<span class="md-ellipsis">
+      4.2.2 Microsserviço das Receitas (RecipeService)
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#5-diagrama-de-pacotes">
+<span class="md-ellipsis">
+      5. Diagrama de Pacotes
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#51-userservice">
+<span class="md-ellipsis">
+      5.1 UserService
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#52-recipeservice">
+<span class="md-ellipsis">
+      5.2 RecipeService
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#referencias-bibliograficas">
+<span class="md-ellipsis">
+      Referências Bibliográficas
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../leaninception/">
+<span class="md-ellipsis">
+    Lean Inception
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../prototipos/">
+<span class="md-ellipsis">
+    Protótipos
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../product-backlog/">
+<span class="md-ellipsis">
+    Product Backlog
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+<span class="md-ellipsis">
+    Planejamento
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+            Planejamento
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../planejamento/comunicacao/">
+<span class="md-ellipsis">
+    Comunicação
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../planejamento/conhecimento/">
+<span class="md-ellipsis">
+    Conhecimento
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../planejamento/custos/">
+<span class="md-ellipsis">
+    Custos
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+<span class="md-ellipsis">
+    Riscos
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_4_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_4">
+<span class="md-nav__icon md-icon"></span>
+            Riscos
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../planejamento/riscos/">
+<span class="md-ellipsis">
+    Riscos
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../planejamento/planos-mitigacao/">
+<span class="md-ellipsis">
+    Planos de Mitigação
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../planejamento/tempo/">
+<span class="md-ellipsis">
+    Tempo
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+<span class="md-ellipsis">
+    Sprints
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+            Sprints
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+<span class="md-ellipsis">
+    Atas Reuniões
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_1_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_1">
+<span class="md-nav__icon md-icon"></span>
+            Atas Reuniões
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../sprints/atas_reunioes/ata1/">
+<span class="md-ellipsis">
+    Reunião 1 (Lean Inception)
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../sprints/atas_reunioes/ata2/">
+<span class="md-ellipsis">
+    Reunião 2 (Lean Inception)
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../sprints/atas_reunioes/ata3/">
+<span class="md-ellipsis">
+    Reunião 3 (Lean Inception)
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+<span class="md-ellipsis">
+    Sprint 1
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_2">
+<span class="md-nav__icon md-icon"></span>
+            Sprint 1
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../sprints/Sprint_1/planning/">
+<span class="md-ellipsis">
+    Planning 1
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../sprints/Sprint_1/review/">
+<span class="md-ellipsis">
+    Review 1
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+<span class="md-ellipsis">
+    Sprint 2
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_3_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_3">
+<span class="md-nav__icon md-icon"></span>
+            Sprint 2
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../sprints/Sprint_2/planning/">
+<span class="md-ellipsis">
+    Planning 2
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../sprints/Sprint_2/review/">
+<span class="md-ellipsis">
+    Review 2
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+<span class="md-ellipsis">
+    Sprint 3
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_4_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_4">
+<span class="md-nav__icon md-icon"></span>
+            Sprint 3
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../sprints/Sprint_3/planning/">
+<span class="md-ellipsis">
+    Planning 3
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../sprints/Sprint_3/review/">
+<span class="md-ellipsis">
+    Review 3
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_5" id="__nav_4_5_label" tabindex="0">
+<span class="md-ellipsis">
+    Sprint 4
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_5_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_5">
+<span class="md-nav__icon md-icon"></span>
+            Sprint 4
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../sprints/Sprint_4/planning/">
+<span class="md-ellipsis">
+    Planning 4
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../sprints/Sprint_4/review/">
+<span class="md-ellipsis">
+    Review 4
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_6" id="__nav_4_6_label" tabindex="0">
+<span class="md-ellipsis">
+    Sprint 5
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_6_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_6">
+<span class="md-nav__icon md-icon"></span>
+            Sprint 5
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../sprints/Sprint_5/planning/">
+<span class="md-ellipsis">
+    Planning 5
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../sprints/Sprint_5/review/">
+<span class="md-ellipsis">
+    Review 5
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_7" id="__nav_4_7_label" tabindex="0">
+<span class="md-ellipsis">
+    Sprint 6
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_7_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_7">
+<span class="md-nav__icon md-icon"></span>
+            Sprint 6
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../sprints/Sprint_6/planning/">
+<span class="md-ellipsis">
+    Planning 6
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../sprints/Sprint_6/review/">
+<span class="md-ellipsis">
+    Review 6
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4_8" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_8" id="__nav_4_8_label" tabindex="0">
+<span class="md-ellipsis">
+    Sprint 7
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_8_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_8">
+<span class="md-nav__icon md-icon"></span>
+            Sprint 7
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../sprints/Sprint_7/planning/">
+<span class="md-ellipsis">
+    Planning 7
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../sprints/Sprint_7/review/">
+<span class="md-ellipsis">
+    Review 7
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4_9" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_9" id="__nav_4_9_label" tabindex="0">
+<span class="md-ellipsis">
+    Sprint 8
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_9_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_9">
+<span class="md-nav__icon md-icon"></span>
+            Sprint 8
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../sprints/Sprint_8/planning/">
+<span class="md-ellipsis">
+    Planning 8
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../sprints/Sprint_8/review/">
+<span class="md-ellipsis">
+    Review 8
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4_10" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_10" id="__nav_4_10_label" tabindex="0">
+<span class="md-ellipsis">
+    Sprint 9
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_10_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_10">
+<span class="md-nav__icon md-icon"></span>
+            Sprint 9
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../sprints/Sprint_9/planning/">
+<span class="md-ellipsis">
+    Planning 9
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../sprints/Sprint_9/review/">
+<span class="md-ellipsis">
+    Review 9
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4_11" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_11" id="__nav_4_11_label" tabindex="0">
+<span class="md-ellipsis">
+    Sprint 10
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_11_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_11">
+<span class="md-nav__icon md-icon"></span>
+            Sprint 10
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../sprints/Sprint_10/planning/">
+<span class="md-ellipsis">
+    Planning 10
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../sprints/Sprint_10/review/">
+<span class="md-ellipsis">
+    Review 10
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4_12" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_12" id="__nav_4_12_label" tabindex="0">
+<span class="md-ellipsis">
+    Sprint 11
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_12_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_12">
+<span class="md-nav__icon md-icon"></span>
+            Sprint 11
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../sprints/Sprint_11/planning/">
+<span class="md-ellipsis">
+    Planning 11
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../sprints/Sprint_11/review/">
+<span class="md-ellipsis">
+    Review 11
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4_13" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_13" id="__nav_4_13_label" tabindex="0">
+<span class="md-ellipsis">
+    Sprint 12
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_13_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_13">
+<span class="md-nav__icon md-icon"></span>
+            Sprint 12
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../sprints/Sprint_12/planning/">
+<span class="md-ellipsis">
+    Planning 12
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../sprints/Sprint_12/review/">
+<span class="md-ellipsis">
+    Review 12
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+<span class="md-ellipsis">
+    Políticas
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_5_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
+            Políticas
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../politicas/politica_commits/">
+<span class="md-ellipsis">
+    Politica de commmits
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../politicas/diretrizes/">
+<span class="md-ellipsis">
+    Diretrizes do Projeto
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../politicas/codigo_conduta/">
+<span class="md-ellipsis">
+    Código de Conduta
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+<span class="md-ellipsis">
+    Encerramento
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_6_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_6">
+<span class="md-nav__icon md-icon"></span>
+            Encerramento
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../encerramento/post-mortem/">
+<span class="md-ellipsis">
+    Post Mortem
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#historico-de-versoes">
+<span class="md-ellipsis">
+      Histórico de versões
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#visao-geral">
+<span class="md-ellipsis">
+      Visão geral
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#metas-e-restricoes-da-arquitetura">
+<span class="md-ellipsis">
+      Metas e restrições da arquitetura
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#representacao-da-arquitetura">
+<span class="md-ellipsis">
+      Representação da Arquitetura
+    </span>
+</a>
+<nav aria-label="Representação da Arquitetura" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#1-diagrama-de-tecnologias">
+<span class="md-ellipsis">
+      1. Diagrama de Tecnologias
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#servicos">
+<span class="md-ellipsis">
+      Serviços
+    </span>
+</a>
+<nav aria-label="Serviços" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#userservice">
+<span class="md-ellipsis">
+      UserService
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#recipeservice">
+<span class="md-ellipsis">
+      RecipeService
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#frontend">
+<span class="md-ellipsis">
+      FrontEnd
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#2-diagrama-de-sequencia">
+<span class="md-ellipsis">
+      2. Diagrama de sequência
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#3-diagrama-de-classes">
+<span class="md-ellipsis">
+      3. Diagrama de Classes
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#4-arquitetura-de-banco-de-dados">
+<span class="md-ellipsis">
+      4. Arquitetura de banco de dados
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#41-diagrama-entidade-relacionamento">
+<span class="md-ellipsis">
+      4.1 Diagrama Entidade Relacionamento
+    </span>
+</a>
+<nav aria-label="4.1 Diagrama Entidade Relacionamento" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#411-microsservico-do-usuario-userservice">
+<span class="md-ellipsis">
+      4.1.1 Microsserviço do Usuário (UserService)
+    </span>
+</a>
+<nav aria-label="4.1.1 Microsserviço do Usuário (UserService)" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#versao-1">
+<span class="md-ellipsis">
+      Versao 1
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#versao-2">
+<span class="md-ellipsis">
+      Versao 2
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#412-microsservico-das-receitas-recipeservice">
+<span class="md-ellipsis">
+      4.1.2 Microsserviço das Receitas (RecipeService)
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#42-modelo-logico-de-dados">
+<span class="md-ellipsis">
+      4.2 Modelo Lógico de Dados
+    </span>
+</a>
+<nav aria-label="4.2 Modelo Lógico de Dados" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#421-microsservico-do-usuario-userservice">
+<span class="md-ellipsis">
+      4.2.1 Microsserviço do Usuário (UserService)
+    </span>
+</a>
+<nav aria-label="4.2.1 Microsserviço do Usuário (UserService)" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#versao-1_1">
+<span class="md-ellipsis">
+      Versao 1
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#versao-2_1">
+<span class="md-ellipsis">
+      Versao 2
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#422-microsservico-das-receitas-recipeservice">
+<span class="md-ellipsis">
+      4.2.2 Microsserviço das Receitas (RecipeService)
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#5-diagrama-de-pacotes">
+<span class="md-ellipsis">
+      5. Diagrama de Pacotes
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#51-userservice">
+<span class="md-ellipsis">
+      5.1 UserService
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#52-recipeservice">
+<span class="md-ellipsis">
+      5.2 RecipeService
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#referencias-bibliograficas">
+<span class="md-ellipsis">
+      Referências Bibliográficas
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1>Documentação da Arquitetura</h1>
+<h2 id="historico-de-versoes">Histórico de versões</h2>
+<table>
+<thead>
+<tr>
+<th>Versão</th>
+<th>Alteração</th>
+<th>Responsável</th>
+<th>Data Alteração</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.0</td>
+<td>Criação do documento, descrição da visão geral, metas e restrições  e criação de diagrama de tecnologias</td>
+<td>Felipe Candido de Moura</td>
+<td>28/04/2025</td>
+</tr>
+<tr>
+<td>1.1</td>
+<td>Criação da Arquitetura do Banco de Dados</td>
+<td>Diógenes Dantas Lélis Júnior</td>
+<td>29/04/2025</td>
+</tr>
+<tr>
+<td>1.2</td>
+<td>Criação diagrama de sequência e classes</td>
+<td>Bruno Seiji Kishibe</td>
+<td>29/04/2025</td>
+</tr>
+<tr>
+<td>1.3</td>
+<td>Criação diagrama de pacotes do UserService e RecipeService</td>
+<td>Diógenes Dantas Lélis Júnior</td>
+<td>19/05/2025</td>
+</tr>
+<tr>
+<td>1.4</td>
+<td>Edição da Arquitetura do Banco de Dados</td>
+<td>Diógenes Dantas Lélis Júnior</td>
+<td>14/07/2025</td>
+</tr>
+<tr>
+<td>1.5</td>
+<td>Atualiza diagrama de classes</td>
+<td>Bruno Seiji Kishibe</td>
+<td>14/07/2025</td>
+</tr>
+</tbody>
+</table>
+<h2 id="visao-geral">Visão geral</h2>
+<p>Este documento visa registrar a aquitetura proposta para o projeto SideChef. </p>
+<p>O software consiste em uma aplicação mobile arquitetada em microsserviços, com o frontend desenvolvido em React Native cuja comunicação de backend é feita utilizando a framework FastAPI. O microsserviço referente aos usuários contará com um banco de dados PostgreSQL, enquanto o referente às receitas com um MongoDB.</p>
+<h2 id="metas-e-restricoes-da-arquitetura">Metas e restrições da arquitetura</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Restrição</strong></th>
+<th><strong>Ferramenta</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Linguagem</td>
+<td>Python e TypeScript</td>
+</tr>
+<tr>
+<td>Framework</td>
+<td>React Native e FastAPI</td>
+</tr>
+<tr>
+<td>Plataforma</td>
+<td>Mobile</td>
+</tr>
+<tr>
+<td>Segurança</td>
+<td>Cada usuário contará com uma conta autenticada via token, visto que o aplicativo dará suporte para criação de receitas personalizadas.</td>
+</tr>
+<tr>
+<td>Idioma</td>
+<td>Português</td>
+</tr>
+</tbody>
+</table>
+<h2 id="representacao-da-arquitetura">Representação da Arquitetura</h2>
+<h3 id="1-diagrama-de-tecnologias">1. Diagrama de Tecnologias</h3>
+<p><img alt="DiagramaTecnologias" src="../../assets/diagramaTecnologias.jpg"/>
+<strong>Autor:</strong> Felipe Moura</p>
+<p>O diagrama de tecnologias demonstra as tecnologias utilizadas no projeto, e como interagem entre si. Pode se ver também a arquitetura de microsserviços explicitada no diagrama e como esta junto a seus componentes se encaixam no sistema.</p>
+<h3 id="servicos">Serviços</h3>
+<p>Podem ser considerados como serviços os diversos subcomponentes do sistema que fornecem algum tipo de interação, ou para com o cliente diretamente, ou para o próprio sistema interno.</p>
+<h4 id="userservice">UserService</h4>
+<p>O microserviço UserService é responsável pela gerência e armazenamento das contas de usuário do sistema.</p>
+<h4 id="recipeservice">RecipeService</h4>
+<p>O microsserviço RecipeService é responável pela gerência e armazenamento das receitas registrado no sistema, tanto as pré-armazenadas pela equipe de desenvolvimento, quanto as criadas pelos próprios usuários.</p>
+<h4 id="frontend">FrontEnd</h4>
+<p>O frontend consiste na parte visual e utilitária ao qual o usuário interage, no caso será o aplicativo mobile desenvolvido em React Native.</p>
+<h3 id="2-diagrama-de-sequencia">2. Diagrama de sequência</h3>
+<div class="mermaid">---
+title: Side Chef diagrama de sequência usuários
+---
+sequenceDiagram
+    actor Usuario
+    Usuario-&gt;&gt;+Mobile: Usuario não possui conta
+    Mobile-&gt;&gt;+UserService: POST cadastrarUsuario
+    UserService-&gt;&gt;+PostgreSQL: salva usuario no banco
+    PostgreSQL-&gt;&gt;-UserService: retorna mensagem de sucesso
+    UserService-&gt;&gt;-Mobile: status code 201
+    Mobile-&gt;&gt;-Usuario: Usuario criado
+
+    Usuario-&gt;&gt;+Mobile: Possui conta
+    Mobile-&gt;&gt;+UserService: POST loginUsuario
+    UserService-&gt;&gt;+PostgreSQL: Verifica credenciais no banco
+    PostgreSQL-&gt;&gt;-UserService: Valida login
+    UserService-&gt;&gt;-Mobile: status code 201
+    Mobile-&gt;&gt;-Usuario: Usuario logado com sucesso
+
+</div>
+<div class="mermaid">---
+title: Side Chef diagrama de sequência receitas
+---
+sequenceDiagram
+    actor Usuario
+    Usuario-&gt;&gt;+Mobile: Pesquisa lista de receitas
+    Mobile-&gt;&gt;+RecipeService: GET recitas
+    RecipeService-&gt;&gt;+MongoDB: Consulta receitas no banco
+    MongoDB-&gt;&gt;-RecipeService: Retorna receitas encontradas no banco
+    RecipeService-&gt;&gt;-Mobile: Retorna lista de receitas encontradas
+    Mobile-&gt;&gt;-Usuario: Mostra lista de receitas pesquisadas
+
+    Usuario-&gt;&gt;+Mobile: Clica em adicionar receitas
+    Mobile-&gt;&gt;Usuario: Atualiza página
+    Usuario-&gt;&gt;Mobile: Adiciona ingrediente
+    Mobile-&gt;&gt;Usuario: Aciona câmera
+    Usuario-&gt;&gt;Mobile: Tira a foto
+    Mobile-&gt;&gt;+RecipeService: POST ingrediente
+    RecipeService-&gt;&gt;+RecipeService: Aciona OCR para verificar texto
+    RecipeService-&gt;&gt;-RecipeService: Retorna texto verificado OCR
+    RecipeService-&gt;&gt;Mobile: Aciona ingrediente a lista
+    Mobile-&gt;&gt;RecipeService: POST Receitas
+    RecipeService-&gt;&gt;+MongoDB: Adiciona receita ao banco
+    MongoDB-&gt;&gt;-RecipeService: Retorna receitas finalizada
+    RecipeService-&gt;&gt;-Mobile: Retorna receita adicionada
+    Mobile-&gt;&gt;-Usuario: Mostra receita adicionada
+
+</div>
+<p><strong>Autor:</strong> Bruno Kishibe</p>
+<h3 id="3-diagrama-de-classes">3. Diagrama de Classes</h3>
+<div class="mermaid">---
+title: Side Chef diagrama de classe
+---
+classDiagram
+    direction TD
+
+    class Usuario {
+        +int idUsuario
+        +string nome
+        +string email
+        +string senha
+        +cadastrarUsuario()
+        +autenticarUsuario()
+        +atualizarCadastro()
+        +excluirUsuario()
+    }
+
+    class Receita {
+        +int idReceita
+        +string nome
+        +string descricao
+        +string dificuldade
+        +int porcoes
+        +string modoPreparo
+        +List~IngredienteReceita~ ingredientes
+    }
+
+    class IngredienteReceita {
+        +int idIngredienteReceita
+        +Ingrediente ingrediente
+        +double quantidade
+        +UnidadeMedida unidade
+    }
+
+    class Ingrediente {
+        +int idIngrediente
+        +string nome
+    }
+
+    class CameraService {
+        +capturarImagem(): Imagem
+        +selecionarImagemGaleria(): Imagem
+    }
+
+    class OcrService {
+        +identificarTexto(imagem: Imagem): List~string~
+    }
+
+    class GeminiApiService {
+        +processarTextoIngredientes(textosOcr: List~string~): List~IngredienteIdentificado~
+    }
+
+    class IngredienteIdentificado {
+        +string nomeOriginal
+        +Ingrediente ingredienteSugerido
+        +double quantidadeSugerida
+        +UnidadeMedida unidadeSugerida
+    }
+
+    class GerenciadorReceitas {
+        +criarReceita(receita: Receita, usuario: Usuario)
+        +consultarReceita(idReceita: int): Receita
+        +listarReceitasPorUsuario(usuario: Usuario): List~Receita~
+        +atualizarReceita(receita: Receita)
+        +excluirReceita(idReceita: int)
+        +buscarReceitas(termo: string): List~Receita~
+    }
+
+    Usuario "1" -- "0..*" Receita : cria/possui
+    Receita "1" *-- "0..*" IngredienteReceita : contém
+    IngredienteReceita "1" --&gt; "1" Ingrediente : referencia
+
+    CameraService "1" --&gt; "1" OcrService : envia imagem para OCR
+    OcrService "1" --&gt; "1" GeminiApiService : envia texto para processamento
+    GeminiApiService "1" ..&gt; "0..*" IngredienteIdentificado : retorna
+
+    GerenciadorReceitas "1" --&gt; "1" Receita : gerencia
+    GerenciadorReceitas "1" --&gt; "1" Usuario : gerencia
+    GerenciadorReceitas "1" ..&gt; "1" IngredienteIdentificado : utiliza para busca
+</div>
+<p><strong>Autor:</strong> Bruno Kishibe</p>
+<h3 id="4-arquitetura-de-banco-de-dados">4. Arquitetura de banco de dados</h3>
+<h3 id="41-diagrama-entidade-relacionamento">4.1 Diagrama Entidade Relacionamento</h3>
+<h4 id="411-microsservico-do-usuario-userservice">4.1.1 Microsserviço do Usuário (UserService)</h4>
+<h5 id="versao-1">Versao 1</h5>
+<p><img alt="DiagramaEntidadeRelacionamento" src="../../assets/diagramaEntidadeRelacionamento.png"/><br/>
+<strong>Autor:</strong> Diógenes Júnior</p>
+<h5 id="versao-2">Versao 2</h5>
+<p><img alt="DiagramaEntidadeRelacionamentov2" src="../../assets/diagramaEntidadeRelacionamentov2.png"/><br/>
+<strong>Autor:</strong> Diógenes Júnior</p>
+<h4 id="412-microsservico-das-receitas-recipeservice">4.1.2 Microsserviço das Receitas (RecipeService)</h4>
+<pre><code class="language-json">{
+  "id": "id-da-receita",
+  "nome": "nome",
+  "ingredientes": ["ingrediente_1", "ingrediente_2"],
+  "instrucoes": "Instruções",
+  "usuarios_que_salvaram": [
+    "id-do-usuario-1",
+    "id-do-usuario-2"
+  ]
+}
+</code></pre>
+<p><strong>Autor:</strong> Diógenes Júnior</p>
+<h3 id="42-modelo-logico-de-dados">4.2 Modelo Lógico de Dados</h3>
+<h4 id="421-microsservico-do-usuario-userservice">4.2.1 Microsserviço do Usuário (UserService)</h4>
+<h5 id="versao-1_1">Versao 1</h5>
+<p><img alt="ModeloLógicoDeDadosUsuário" src="../../assets/logicaDeDados.png"/><br/>
+<strong>Autor:</strong> Diógenes Júnior</p>
+<h5 id="versao-2_1">Versao 2</h5>
+<p><img alt="ModeloLógicoDeDadosUsuáriov2" src="../../assets/logicaDeDadosv2.png"/><br/>
+<strong>Autor:</strong> Diógenes Júnior</p>
+<h4 id="422-microsservico-das-receitas-recipeservice">4.2.2 Microsserviço das Receitas (RecipeService)</h4>
+<pre><code class="language-json">{
+  "id": "&lt;ObjectId&gt;",               
+  "nome": "string",                      
+  "ingredientes": ["string"],          
+  "instrucoes": "string",               
+  "usuarios_que_salvaram": ["string"]    
+}
+</code></pre>
+<p><strong>Autor:</strong> Diógenes Júnior</p>
+<h3 id="5-diagrama-de-pacotes">5. Diagrama de Pacotes</h3>
+<h3 id="51-userservice">5.1 UserService</h3>
+<p><img alt="DiagramaDePacotesUserService" src="../../assets/PackageDiagram.jpg"/><br/>
+<strong>Autor:</strong> Diógenes Júnior</p>
+<h3 id="52-recipeservice">5.2 RecipeService</h3>
+<p><img alt="DiagramaDePacotesRecipeService" src="../../assets/PackageDiagramRecipe.jpg"/><br/>
+<strong>Autor:</strong> Diógenes Júnior</p>
+<h2 id="referencias-bibliograficas">Referências Bibliográficas</h2>
+<blockquote>
+<p>[1] EQUIPE ARANDU 2024-2. Documento de Arquitetura. Disponível em: https://fga-eps-mds.github.io/2024.2-ARANDU-DOC/projeto/arquitetura/<br>
+[2] EQUIPE SYSARQ 2021-1. Documento de Arquitetura. Disponível em: https://fga-eps-mds.github.io/2021.1-PC-GO1/doc_arquitetura/ 
+[3] DEVMEDIA. Orientações básicas na elaboração de um diagrama de classes. Disponível em: https://www.devmedia.com.br/orientacoes-basicas-na-elaboracao-de-um-diagrama-de-classes/37224.
+[4] Documentação Oficial MongoDB. Disponível em: https://www.mongodb.com/pt-br/docs/v6.0/core/data-modeling-introduction/</br></p>
+</blockquote>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button class="md-top md-icon" data-md-component="top" hidden="" type="button">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Back to top
+</button>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.top"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+<script src="../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+<script type="module">import mermaid from "https://unpkg.com/mermaid@10.4.0/dist/mermaid.esm.min.mjs";
+mermaid.initialize({});</script></body>
+</html>
