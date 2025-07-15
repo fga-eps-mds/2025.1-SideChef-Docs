@@ -6,6 +6,8 @@
 | 1.1    | Criação da Arquitetura do Banco de Dados | Diógenes Dantas Lélis Júnior | 29/04/2025 |
 | 1.2    | Criação diagrama de sequência e classes | Bruno Seiji Kishibe | 29/04/2025 |
 | 1.3    | Criação diagrama de pacotes do UserService e RecipeService | Diógenes Dantas Lélis Júnior | 19/05/2025 |
+| 1.4    | Edição da Arquitetura do Banco de Dados | Diógenes Dantas Lélis Júnior | 14/07/2025 |
+
 
 ## Visão geral
 Este documento visa registrar a aquitetura proposta para o projeto SideChef. 
@@ -156,7 +158,13 @@ classDiagram
 ### 4.1 Diagrama Entidade Relacionamento
 
 #### 4.1.1 Microsserviço do Usuário (UserService)
+
+##### Versao 1
 ![DiagramaEntidadeRelacionamento](../assets/diagramaEntidadeRelacionamento.png)<br>
+**Autor:** Diógenes Júnior
+
+##### Versao 2
+![DiagramaEntidadeRelacionamentov2](../assets/diagramaEntidadeRelacionamentov2.png)<br>
 **Autor:** Diógenes Júnior
 
 #### 4.1.2 Microsserviço das Receitas (RecipeService)
@@ -177,7 +185,13 @@ classDiagram
 ### 4.2 Modelo Lógico de Dados
 
 #### 4.2.1 Microsserviço do Usuário (UserService)
+
+##### Versao 1
 ![ModeloLógicoDeDadosUsuário](../assets/logicaDeDados.png)<br>
+**Autor:** Diógenes Júnior
+
+##### Versao 2
+![ModeloLógicoDeDadosUsuáriov2](../assets/logicaDeDadosv2.png)<br>
 **Autor:** Diógenes Júnior
 
 #### 4.2.2 Microsserviço das Receitas (RecipeService)
