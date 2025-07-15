@@ -31,7 +31,9 @@ nav:
     - Comunicação: planejamento/comunicacao.md
     - Conhecimento: planejamento/conhecimento.md
     - Custos: planejamento/custos.md
-    - Riscos: planejamento/riscos.md
+    - Riscos: 
+      - Riscos: planejamento/riscos.md
+      - Planos de Mitigação: planejamento/planos-mitigacao.md
     - Tempo: planejamento/tempo.md
   - Sprints:
     - Atas Reuniões: 
