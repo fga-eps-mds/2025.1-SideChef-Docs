@@ -5,6 +5,7 @@
 | Versão | Alteração       | Responsável         | Data Alteração |
 |--------|-----------------|---------------------|----------------|
 | 1.0    | Criação do Planos de Mitigação dos Riscos  | Diógenes Dantas Lélis Júnior | 14/07/2025 |
+| 1.1    | Adição do Planos de Mitigação de Riscos PR | Bruno Seiji Kishibe          | 14/07/2025 |
 
 ## Introdução
 
@@ -20,6 +21,7 @@ Esse documento visa apresentar como o grupo trabalhou para lidar com os riscos d
 | Baixa disponibilidade de tempo por alguns membros   | Dividir tarefas conforme a disponibilidade; manter comunicação clara sobre prazos e responsabilidades.             | :white_check_mark: |
 | Outras Disciplinas                                  | Fazer um planejamento antecipado considerando as demandas acadêmicas; usar cronogramas realistas.                  | :white_check_mark: |
 | Demora na revisão dos Pull Requests                 | Fazer reuniões específicas com os membros de EPS para a revisão dos PRs                                            | :white_check_mark: |
+| Demora na revisão dos Pull Requests                 | Criação do grupo de Daily no Whatsapp, onde os membros de MDS colocavam o que trabalharam e se abriram algum PR                                            | :white_check_mark: |
 
 ## Arquivo Excel para o Controle de Ristos
 

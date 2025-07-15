@@ -6,6 +6,7 @@
 |--------|-----------------|---------------------|----------------|
 | 1.0    | Versão inicial do documento, incluindo introdução, planejamento, métricas, análise e resposta aos riscos  | Bruno Seiji Kishibe | 30/04/2025 |
 | 1.1    | Remove resposta aos Riscos e Monitoramento  | Diógenes Dantas Lélis Júinior | 14/07/2025 |
+| 1.2    | Adiciona gráfico final de burndown de riscos  | Bruno Seiji Kishibe | 14/07/2025 |
 
 ## Introdução
 
@@ -77,6 +78,9 @@ Abaixo estão listados os riscos e a análise quantitativa dos riscos identifica
 | Sprint 3                | Outras Disciplinas                                  | 7             | 10      |
 | Sprint 6                | Demora na revisão dos Pull Requests                 | 7             | 10      |
 
+## Burndown de riscos final 
+
+![GraficoBurndownRiscos](../assets/burndownRiscos.png)
 
 ## Referências
 

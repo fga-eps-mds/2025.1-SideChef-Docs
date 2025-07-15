@@ -6,6 +6,7 @@
 | 1.1    | Criação da Arquitetura do Banco de Dados | Diógenes Dantas Lélis Júnior | 29/04/2025 |
 | 1.2    | Criação diagrama de sequência e classes | Bruno Seiji Kishibe | 29/04/2025 |
 | 1.3    | Criação diagrama de pacotes do UserService e RecipeService | Diógenes Dantas Lélis Júnior | 19/05/2025 |
+| 1.4    | Atualiza diagrama de classes | Bruno Seiji Kishibe | 14/07/2025 |
 
 ## Visão geral
 Este documento visa registrar a aquitetura proposta para o projeto SideChef. 
@@ -103,51 +104,81 @@ sequenceDiagram
 title: Side Chef diagrama de classe
 ---
 classDiagram
-    class Usuario{
+    direction TD
+
+    class Usuario {
         +int idUsuario
         +string nome
         +string email
+        +string senha
         +cadastrarUsuario()
-        +deletarUsuario()
+        +autenticarUsuario()
         +atualizarCadastro()
+        +excluirUsuario()
     }
-    class Receita{
-        +int receitaId
+
+    class Receita {
+        +int idReceita
         +string nome
-        +double totalCalorias
-        +double totalProteinas
-        +List~Ingrediente~ Ingredientes
-        +adicionaIngrediente()
-        -calcularProteinas()
-        -calcularCalorias()
+        +string descricao
+        +string dificuldade
+        +int porcoes
+        +string modoPreparo
+        +List~IngredienteReceita~ ingredientes
     }
-    class Ingrediente{
-        +int ingredienteId
+
+    class IngredienteReceita {
+        +int idIngredienteReceita
+        +Ingrediente ingrediente
+        +double quantidade
+        +UnidadeMedida unidade
+    }
+
+    class Ingrediente {
+        +int idIngrediente
         +string nome
-        +enum unidadeMedida
-        +double calorias
-        +double proteinas
     }
-    class Camera {
+
+    class CameraService {
         +capturarImagem(): Imagem
+        +selecionarImagemGaleria(): Imagem
     }
+
     class OcrService {
-        +identificarIngrediente(imagem: Imagem): Ingrediente
-        +identificarInformacoesNutricionais(imagem: Imagem): Nutricao
+        +identificarTexto(imagem: Imagem): List~string~
     }
-    class ReceitaPessoal{
-        -int idUsuario
-        +verificaAcesso()
-        +listaReceitas()
+
+    class GeminiApiService {
+        +processarTextoIngredientes(textosOcr: List~string~): List~IngredienteIdentificado~
     }
-    
-    Camera --> OcrService : fornece imagem
-    Receita <-- Usuario
-    Receita o-- Ingrediente
-    Ingrediente o-- OcrService
-    Receita <|-- ReceitaPessoal
 
+    class IngredienteIdentificado {
+        +string nomeOriginal
+        +Ingrediente ingredienteSugerido
+        +double quantidadeSugerida
+        +UnidadeMedida unidadeSugerida
+    }
 
+    class GerenciadorReceitas {
+        +criarReceita(receita: Receita, usuario: Usuario)
+        +consultarReceita(idReceita: int): Receita
+        +listarReceitasPorUsuario(usuario: Usuario): List~Receita~
+        +atualizarReceita(receita: Receita)
+        +excluirReceita(idReceita: int)
+        +buscarReceitas(termo: string): List~Receita~
+    }
+
+    Usuario "1" -- "0..*" Receita : cria/possui
+    Receita "1" *-- "0..*" IngredienteReceita : contém
+    IngredienteReceita "1" --> "1" Ingrediente : referencia
+
+    CameraService "1" --> "1" OcrService : envia imagem para OCR
+    OcrService "1" --> "1" GeminiApiService : envia texto para processamento
+    GeminiApiService "1" ..> "0..*" IngredienteIdentificado : retorna
+
+    GerenciadorReceitas "1" --> "1" Receita : gerencia
+    GerenciadorReceitas "1" --> "1" Usuario : gerencia
+    GerenciadorReceitas "1" ..> "1" IngredienteIdentificado : utiliza para busca
 ```
 **Autor:** Bruno Kishibe
 
