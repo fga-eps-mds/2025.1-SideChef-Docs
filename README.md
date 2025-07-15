@@ -2,6 +2,14 @@
 
 O SideChef é um aplicativo mobile que disponibiliza diversas receitas, acessível para tanto para usuários mais experientes quanto inexperientes. Possui funcionalidades como: busca de receitas com base em ingredientes disponíveis pelo usuário; identificação de ingredientes pela embalagem usando a câmera do celular; e criação de receitas pelos usuários.
 
+## Repositórios do Projeto
+
+
+### [Mobile](https://github.com/fga-eps-mds/2025.1-SideChef-Mobile)
+### [RecipeService](https://github.com/fga-eps-mds/2025.1-SideChef-RecipeService)
+### [UserService](https://github.com/fga-eps-mds/2025.1-SideChef-UserService)
+
+
 ## Integrantes 
 
 ### EPS 
