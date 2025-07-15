@@ -21,8 +21,6 @@ Através deste artefato, buscamos apresentar os resultados obtidos no projeto, t
 | [US06](https://app.zenhub.com/workspaces/2025-1time3ocr-67f593a6ef2d81000f2d84b4/issues/gh/fga-eps-mds/2025.1-sidechef-docs/15) | Login do Usuário | Não entregue |
 | [US07](https://app.zenhub.com/workspaces/2025-1time3ocr-67f593a6ef2d81000f2d84b4/issues/gh/fga-eps-mds/2025.1-sidechef-docs/16) | Criação de receitas | Entregue e Validada |
 
-*Tabela 2: Histórias Planejadas x Entregues*
-
 ## Comentarios
 
 ### Bruno Seiji Kishibe
@@ -39,12 +37,12 @@ Através deste artefato, buscamos apresentar os resultados obtidos no projeto, t
 
 </br>
 
-### Felipe Candido Moura
-  - Aspectos Positivos: 
-  - Aspectos Negativos: 
-  - Pontos de Melhoria: 
-  - Opinião Geral: 
-
+### Felipe Candido de Moura
+  - Aspectos Positivos: Poder "gerenciar" uma equipe, fazer planejamentos, acompanhamento e validação de um produto de software são experiências que nunca tinha tido antes, e acredito que a disciplina Foi extremamente importante para minha formação, por me dar "insights" justamente nessas áreas que sentia falta e necessidade e que são essenciais para a engenharia de software. Além disso tive a oportunidade de trabalhar com um aplicativo mobile em micro-serviços, tecnologias que também não tinha experiências prévias e que me foram muito benéficas, por me abrirem ainda mais os horizontes para as diversas áreas que envonvem a programação.
+  - Aspectos Negativos: A organização certamente foi um aspecto negativo do projeto. Acredito que nós de EPS poderiamos ter feito um trabalho melhor nesse sentido, para facilitar um pouco mais a vida do time de MDS. Nós de EPS poderíamos estar mais envolvidos também na parte prática, talvez ajudando um pouco mais nesse sentido. A falta de conhecimento dos membros de EPS quanto às tecnologias necessitadas dificultou bastante o planejamento e execução do projeto. 
+  - Pontos de Melhoria: Organização e acompanhamento, visto que são atividades que nós de EPS não tinhamos tido contato antes. Por parte dos MDS, acredito que a proatividade de alguns poderia melhorar também.
+  - Opinião Geral: Em geral foi um trabalho bem interessante de se fazer, nos dando a oportunidade de realizar atividades e papéis que não tinhamos experiência, além de trabalhar com novas tecnologias as quais não estávamos acostumados. Acredito que parte dos MDS, eles tiveram bastante oportunidade de praticar e desenvolver habilidades relacionadas à programação, visto que desenvolveram praticamente tudo relacionado à código. Apesar dos pontos de melhoria, foi um trabalho gratificante e sem maiores problemas e atritos entre as equipes e membros.
+ 
 </br>
 
 ### Vinícius de Jesus Bessa Fernandes
