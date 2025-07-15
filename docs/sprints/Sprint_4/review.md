@@ -92,7 +92,7 @@ Review da Sprint 4, realizando as seguintes atividades:
 
 ### Comulative Flow
 
-![CumulativeFlow](../../assets/sprint4/ComulativeFlowSprint4.png)
+![CumulativeFlow](../../assets/sprint4/CumulativeFlowSprint4.png)
 **Grafico Cumulative Flow Sprint 4**
 
 ### Control Charts
